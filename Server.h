@@ -50,6 +50,20 @@ public:
 		string filePath;
 		int addrLen = sizeof(struct sockaddr);
 		int bufLen = recvfrom(m_sockfd, filePath, 100, 0,(struct sockaddr*)&client, &addrLen);
+		cout << "filepath is " << filePath << endl;
+		if(filePath < 0) {
+			cout << "recv error." << endl;
+			return -1;
+		} else {
+			int i = 0, k = 0;
+			for(i = strlen(filePath); i >= 0; --i) {
+				if(filePath[i] != '/') {
+					++k;
+				} else {
+					break;
+				}
+			}
+		}
 	}
 
 	bool sockClose() {}
