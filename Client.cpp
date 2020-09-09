@@ -9,6 +9,8 @@
 #include"Client.h"
 
 int main() {
+	Client client;
+
 	int sockcd;
 	struct sockaddr_in server;
 	int addrlen=sizeof(struct sockaddr);

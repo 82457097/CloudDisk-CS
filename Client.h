@@ -9,4 +9,4 @@ public:
 
 	Socket socket;
 
-}
+};

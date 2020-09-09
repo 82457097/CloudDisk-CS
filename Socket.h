@@ -6,9 +6,14 @@
 #include<errno.h>
 #include<memory.h> 
 #include<cstdlib> 
+#include<iostream>
+#include<fcntl.h>
+#include<sys/stat.h>
+#include <unistd.h>
+#include"file.h"
 
-#define BUFFER_SIZE = 1024;
-#define PORT = 8888;
+#define BUFFER_SIZE 1024
+#define PORT 8888
 
 using namespace std;
 
@@ -19,24 +24,20 @@ public:
 
 	~Socket() {}
 
-	bool sockInit();
+	bool SockInit();
 
-	bool sockBind();
+	bool SockBind();
 
-	bool sockRecvFrom();
+	bool SockRecvFrom();
 
-	bool sockClose();
+	bool SockClose();
 
-	bool sockSendTo();
-	
+	bool SockSendTo();
+
+	File file;
 	int m_sockfd;
-	int fileTrans;
-	char* dataBuf;
-	int writeLen;
 	struct sockaddr_in server, client;
-	char fileName[100];
-	char filePath[100];
-}
+};
 
 
 

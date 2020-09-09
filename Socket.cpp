@@ -2,15 +2,15 @@
 
 Socket::Socket() {
 	if((m_sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
-		cout << "socket build success." << endl;
-	} else {
 		cout << "socket build failed." << endl;
+	} else {
+		cout << "socket build success." << endl;
 	}
 }
 
-bool Socket::sockInit() {
-	dataBuf = (char*)malloc(BUFFER_SIZE);
-	memset(dataBuf, 0, sizeof(dataBuf));
+bool Socket::SockInit() {
+	file.fileData = (char*)malloc(BUFFER_SIZE);
+	memset(file.fileData, 0, sizeof(file.fileData));
 	memset(&server, 0, sizeof(server));
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -19,7 +19,7 @@ bool Socket::sockInit() {
 	return true;
 }
 
-bool Socket::sockBind() {
+bool Socket::SockBind() {
 	if(bind(m_sockfd, (struct sockaddr*)&server, sizeof(server)) == -1) {
 		cout << "bind error." << endl;
 		return false;
@@ -30,64 +30,64 @@ bool Socket::sockBind() {
 	return true;
 }
 
-bool Socket::sockRecvFrom() {
-	int addrLen = sizeof(struct sockaddr);
-	int bufLen = recvfrom(m_sockfd, filePath, 100, 0,(struct sockaddr*)&client, &addrLen);
-	cout << "filepath is: " << filePath << endl;
-	if(filePath < 0) {
+bool Socket::SockRecvFrom() {
+	unsigned int addrLen = sizeof(struct sockaddr);
+	int bufLen = recvfrom(m_sockfd, file.filePath, 100, 0,(struct sockaddr*)&client, &addrLen);
+	cout << "filepath is: " << file.filePath << endl;
+	if(file.filePath < 0) {
 		cout << "recv error." << endl;
 		return -1;
 	} else {
 		int i = 0, k = 0;
-		for(i = strlen(filePath); i >= 0; --i) {
-			if(filePath[i] != '/') {
+		for(i = strlen(file.filePath); i >= 0; --i) {
+			if(file.filePath[i] != '/') {
 				++k;
 			} else {
 				break;
 			}
 		}
-		strcpy(fileName, filePath + (strlen(filePath) - k) + 1);
+		strcpy(file.fileName, file.filePath + (strlen(file.filePath) - k) + 1);
 	}
-	cout  << "filename: " << filePath << endl;
-	int fd = open(fileName, O_CREAT | O_RDWR, 0664);
+	cout  << "filename: " << file.filePath << endl;
+	int fd = open(file.fileName, O_CREAT | O_RDWR, 0664);
 	if(fd < 0) {
 		cout << "open file failed." << endl;
 	} else {
 		int times = 1;
-		while(fileTrans = recvfrom(m_sockfd, dataBuf, BUFFER_SIZE, 0, 
-			(struct sockaddr*)&client, addrLen)) {
+		while(file.fileTrans = recvfrom(m_sockfd, file.fileData, BUFFER_SIZE, 0, 
+			(struct sockaddr*)&client, &addrLen)) {
 			cout << "times: " << times << endl;
 			++times;
-			if(fileTrans < 0) {
+			if(file.fileTrans < 0) {
 				cout << "recv2 error." << endl;
 				break;
 			}
-			writeLen = write(fd, dataBuf, fileTrans);
-			if(fileTrans < BUFFER_SIZE) {
+			file.writeLen = write(fd, file.fileData, file.fileTrans);
+			if(file.fileTrans < BUFFER_SIZE) {
 				cout << "write finished." << endl;
 				break;
 			} else {
 				cout << "write success." << endl;
 			}
 			cout << "continue..." << endl;
-			memset(dataBuf, 0, sizeof(dataBuf));
+			memset(file.fileData, 0, sizeof(file.fileData));
 		}
 		cout << "recv finished." << endl;
 		close(fd);
 	}
-	sockClose();
+	SockClose();
 	
 	return true;
 
 }
 
-bool Socket::sockClose() {
+bool Socket::SockClose() {
 	close(m_sockfd);
 
 	return true;
 }
 
-bool Socket::sockSendTo() {
+bool Socket::SockSendTo() {
 
 }
 
