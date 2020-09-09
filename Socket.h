@@ -25,13 +25,9 @@ public:
 	~Socket() {}
 
 	bool SockInit();
-
 	bool SockBind();
-
 	bool SockRecvFrom();
-
 	bool SockClose();
-
 	bool SockSendTo();
 
 	File file;

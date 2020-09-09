@@ -34,7 +34,7 @@ bool Socket::SockRecvFrom() {
 	unsigned int addrLen = sizeof(struct sockaddr);
 	int bufLen = recvfrom(m_sockfd, file.filePath, 100, 0,(struct sockaddr*)&client, &addrLen);
 	cout << "filepath is: " << file.filePath << endl;
-	if(file.filePath < 0) {
+	if(bufLen < 0) {
 		cout << "recv error." << endl;
 		return -1;
 	} else {
