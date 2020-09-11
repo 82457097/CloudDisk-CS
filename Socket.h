@@ -9,6 +9,7 @@
 #include<fcntl.h>
 #include<sys/stat.h>
 #include<unistd.h>
+#include<arpa/inet.h> 
 #include"file.h"
 
 #define BUFFER_SIZE 1024
@@ -22,7 +23,8 @@ public:
 	Socket();
 	~Socket() {}
 
-	bool SockInit();
+	bool SockInitServer();
+	bool SockInitClient();
 	bool SockBind();
 	int SockRecvFrom(char buf[], int recvLen, unsigned int* addrLen);
 	int SockSendTo(const char buf[], int len, int addrLen);
@@ -31,10 +33,4 @@ public:
 	int m_sockfd;
 	struct sockaddr_in server, client;
 };
-
-
-
-
-
-
 

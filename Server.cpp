@@ -12,13 +12,14 @@ int main() {
 
 
 	while(true) {
-		server.ServerRecv();
+		if(server.ServerRecv()) {
+			continue;
+		} else {
+			break;
+		}
 	}
 
+	server.socket.SockClose();
 
 	return 0;
 }
-
-
-
-

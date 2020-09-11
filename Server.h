@@ -10,10 +10,10 @@ public:
 	~Server() {}
 
 	bool ServerInit() {
-		socket.SockInit();
+		socket.SockInitServer();
 		socket.SockBind();
 		file.fileData = (char*)malloc(BUFFER_SIZE);
-		memset(file.fileData, 0, sizeof(file.fileData));
+		memset(file.fileData, '\0', sizeof(file.fileData));
 	
 		return true;
 	}
@@ -24,7 +24,7 @@ public:
 		cout << "filepath is: " << file.filePath << endl;
 		if(recvLen < 0) {
 			cout << "recv error." << endl;
-			return -1;
+			return false;
 		} else {
 			int i = 0, k = 0;
 			for(i = strlen(file.filePath); i >= 0; --i) {
@@ -44,6 +44,7 @@ public:
 			int times = 1;
 			while(recvLen = socket.SockRecvFrom(file.fileData, BUFFER_SIZE, &addrLen)) {
 				cout << "times: " << times << endl;
+				cout << recvLen << endl;
 				++times;
 				if(recvLen < 0) {
 					cout << "recv2 error." << endl;
@@ -62,8 +63,6 @@ public:
 			cout << "recv finished." << endl;
 			close(fd);
 		}
-		
-		socket.SockClose();
 	
 		return true;
 	}

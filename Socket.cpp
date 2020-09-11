@@ -8,11 +8,22 @@ Socket::Socket() {
 	}
 }
 
-bool Socket::SockInit() {
+bool Socket::SockInitServer() {
+	memset(&server, 0, sizeof(server));
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = htonl(INADDR_ANY);
 	server.sin_port = htons(PORT);
 	cout << "init success." << endl;
+
+	return true;
+}
+
+bool Socket::SockInitClient() {
+	memset(&server, 0, sizeof(server));
+	server.sin_family= AF_INET;
+	server.sin_port = htons(PORT);
+	server.sin_addr.s_addr = inet_addr("127.0.0.1");
+
 
 	return true;
 }
@@ -41,7 +52,7 @@ int Socket::SockRecvFrom(char buf[], int len, unsigned int* addrLen) {
 }
 
 int Socket::SockSendTo(const char buf[], int len, int addrLen) {
-	int sendLen = sendto(m_sockfd, buf, len, 0, (struct sockaddr *)&server, addrLen);
+	int sendLen = sendto(m_sockfd, buf, len, 0, (struct sockaddr*)&server, addrLen);
 	if(sendLen < 0) {
 		cout << "send failed." << endl;
 		return -1;
