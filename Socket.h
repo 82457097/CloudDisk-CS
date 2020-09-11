@@ -3,13 +3,12 @@
 #include<sys/types.h>
 #include<cstring>
 #include<netinet/in.h>
-#include<errno.h>
 #include<memory.h> 
 #include<cstdlib> 
 #include<iostream>
 #include<fcntl.h>
 #include<sys/stat.h>
-#include <unistd.h>
+#include<unistd.h>
 #include"file.h"
 
 #define BUFFER_SIZE 1024
@@ -21,16 +20,14 @@ class Socket {
 public:
 	
 	Socket();
-
 	~Socket() {}
 
 	bool SockInit();
 	bool SockBind();
-	bool SockRecvFrom();
+	int SockRecvFrom(char buf[], int recvLen, unsigned int* addrLen);
+	int SockSendTo(const char buf[], int len, int addrLen);
 	bool SockClose();
-	bool SockSendTo();
 
-	File file;
 	int m_sockfd;
 	struct sockaddr_in server, client;
 };

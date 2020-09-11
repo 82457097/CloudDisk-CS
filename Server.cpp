@@ -3,9 +3,17 @@
 int main() {
 	Server server;
 	
-	server.ServerInit();
-	server.ServerRecv();
+	if(server.ServerInit()) {
+		cout << "server init success." << endl;
+	} else {
+		cout << "server init failed." << endl;
+		return -1;
+	}
 
+
+	while(true) {
+		server.ServerRecv();
+	}
 
 
 	return 0;

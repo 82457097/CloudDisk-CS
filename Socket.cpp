@@ -9,12 +9,10 @@ Socket::Socket() {
 }
 
 bool Socket::SockInit() {
-	file.fileData = (char*)malloc(BUFFER_SIZE);
-	memset(file.fileData, 0, sizeof(file.fileData));
-	memset(&server, 0, sizeof(server));
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = htonl(INADDR_ANY);
 	server.sin_port = htons(PORT);
+	cout << "init success." << endl;
 
 	return true;
 }
@@ -30,64 +28,37 @@ bool Socket::SockBind() {
 	return true;
 }
 
-bool Socket::SockRecvFrom() {
-	unsigned int addrLen = sizeof(struct sockaddr);
-	int bufLen = recvfrom(m_sockfd, file.filePath, 100, 0,(struct sockaddr*)&client, &addrLen);
-	cout << "filepath is: " << file.filePath << endl;
-	if(bufLen < 0) {
+int Socket::SockRecvFrom(char buf[], int len, unsigned int* addrLen) {
+	int recvLen = recvfrom(m_sockfd, buf, len, 0, (struct sockaddr*)&client, addrLen);
+	if(recvLen < 0) {
 		cout << "recv error." << endl;
 		return -1;
 	} else {
-		int i = 0, k = 0;
-		for(i = strlen(file.filePath); i >= 0; --i) {
-			if(file.filePath[i] != '/') {
-				++k;
-			} else {
-				break;
-			}
-		}
-		strcpy(file.fileName, file.filePath + (strlen(file.filePath) - k) + 1);
+		cout << "recv success." << endl;
 	}
-	cout  << "filename: " << file.filePath << endl;
-	int fd = open(file.fileName, O_CREAT | O_RDWR, 0664);
-	if(fd < 0) {
-		cout << "open file failed." << endl;
-	} else {
-		int times = 1;
-		while(file.fileTrans = recvfrom(m_sockfd, file.fileData, BUFFER_SIZE, 0, 
-			(struct sockaddr*)&client, &addrLen)) {
-			cout << "times: " << times << endl;
-			++times;
-			if(file.fileTrans < 0) {
-				cout << "recv2 error." << endl;
-				break;
-			}
-			file.writeLen = write(fd, file.fileData, file.fileTrans);
-			if(file.fileTrans < BUFFER_SIZE) {
-				cout << "write finished." << endl;
-				break;
-			} else {
-				cout << "write success." << endl;
-			}
-			cout << "continue..." << endl;
-			memset(file.fileData, 0, sizeof(file.fileData));
-		}
-		cout << "recv finished." << endl;
-		close(fd);
-	}
-	SockClose();
 	
-	return true;
-
+	return recvLen;
 }
+
+int Socket::SockSendTo(const char buf[], int len, int addrLen) {
+	int sendLen = sendto(m_sockfd, buf, len, 0, (struct sockaddr *)&server, addrLen);
+	if(sendLen < 0) {
+		cout << "send failed." << endl;
+		return -1;
+	} else {
+		cout << "send success." << endl;
+	}
+
+	return sendLen;
+}
+
 
 bool Socket::SockClose() {
 	close(m_sockfd);
-
+	cout << "close success." << endl;
+	
 	return true;
 }
 
-bool Socket::SockSendTo() {
 
-}
 

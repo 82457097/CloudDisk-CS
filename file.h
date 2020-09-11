@@ -1,4 +1,3 @@
-#pragma once
 #include<string>
 //#include"fastDFS.h"
 //#include"fastCGI.h"
@@ -17,8 +16,6 @@ public:
 	char filePath[FILE_PATH_LEN] = {'\0'};
 	//char fileId[FILE_ID_LEN] = { '\0' };
 	char *fileData;
-	int fileTrans;
-	int writeLen;
 	//char *pbegin = nullptr, *pend = nullptr, *ptemp = nullptr;
 	//char *contentLen;
 	//FastDFS fastDFS;
