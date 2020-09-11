@@ -11,7 +11,6 @@ public:
 
 	bool ClientInit() {
 		socket.SockInitClient();
-		//socket.SockBind();
 		file.fileData = (char*)malloc(BUFFER_SIZE);
 		memset(file.fileData, '\0', sizeof(file.fileData));
 		
@@ -24,7 +23,7 @@ public:
 		cout << "please input file path: " << endl;
 		cin >> file.filePath;
 	 
-		int fd = open(file.filePath, O_CREAT | O_RDWR, 0664);
+		int fd = open(file.filePath, O_RDWR, 0664);
 		if(fd < 0) {
 			printf("filepath not found!\n");
 			return false;
@@ -41,10 +40,13 @@ public:
 
 		printf("begin send data...\n");
 		int times = 1;
-		while((sendLen = read(fd, file.fileData, BUFFER_SIZE) > 0)) {
-			printf("times = %d",times);
-			times++;
-			cout << sendLen << endl;
+		while((sendLen = read(fd, file.fileData, BUFFER_SIZE))) {
+			if(sendLen < 0) {
+				cout << "read error." << endl;
+				break;
+			}
+			printf("times = %d", times);
+			++times;
 			if(socket.SockSendTo(file.fileData, sendLen, addrLen) < 0) {
 				printf("send failed!\n");
 				break;		
