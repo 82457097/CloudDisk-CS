@@ -12,7 +12,7 @@ int main() {
 
 
 	while(true) {
-		if(server.ServerRecv()) {
+		if(server.ServerAccept()) {
 			continue;
 		} else {
 			break;

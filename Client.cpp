@@ -10,7 +10,7 @@ int main() {
 	}
 
 	while(true) {
-		if(client.ClientSendTo()) {
+		if(client.ClientSend()) {
 			continue;
 		} else {
 			break;

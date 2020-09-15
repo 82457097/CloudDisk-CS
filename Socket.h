@@ -14,6 +14,8 @@
 
 #define BUFFER_SIZE 1024
 #define PORT 8888
+#define MAX_CONNECT 20
+//#define ADDR_SIZE sizeof(m_sockaddr)
 
 using namespace std;
 
@@ -26,11 +28,16 @@ public:
 	bool SockInitServer();
 	bool SockInitClient();
 	bool SockBind();
-	int SockRecvFrom(char buf[], int recvLen, unsigned int* addrLen);
-	int SockSendTo(const char buf[], int len, int addrLen);
+	bool SockListen();
+	int SockConnect();
+	int SockAccpet();
+	int SockRecv(int recvfd, char buf[], int len);
+	int SockSend(int sendfd, const char buf[], int len);
 	bool SockClose();
 
 	int m_sockfd;
-	struct sockaddr_in server, client;
+	int recvLen;
+	int sendLen;
+	struct sockaddr_in m_sockaddr;
 };
 
