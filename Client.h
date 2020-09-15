@@ -33,38 +33,38 @@ public:
 	 
 		fd = open(file.filePath, O_RDWR, 0664);
 		if(fd < 0) {
-			printf("filepath not found!\n");
+			cout << "filepath not found!" << endl;
 			return false;
 		} else {
-			printf("filepath : %s\n", file.filePath);
+			cout << "filepath : " << file.filePath << endl;
 		}
 		
 		sendLen = socket.SockSend(socket.m_sockfd, file.filePath, 100);
 		if(sendLen < 0) {
-			printf("filepath send error!\n");
+			cout << "filepath send error!" << endl;
 			return false;
 		} else {
-			printf("filepath send success!\n");
+			cout << "filepath send success!" << endl;
 		}
 
 		return true;
 	}
 
 	bool SendFileData() {
-		printf("begin send data...\n");
+		cout << "begin send data..." << endl;
 		int times = 1;
 		while((sendLen = read(fd, file.fileData, BUFFER_SIZE))) {
 			if(sendLen < 0) {
 				cout << "read error." << endl;
 				break;
 			}
-			printf("times = %d\n", times);
+			cout << "times = " << times << endl;
 			++times;
 			if(socket.SockSend(socket.m_sockfd, file.fileData, BUFFER_SIZE) < 0) {
-				printf("send failed!\n");
+				cout << "send failed!" << endl;
 				break;		
 			} else {
-				printf("send successful!\n");
+				cout << "send successful!" << endl;
 			}
 			if(sendLen < BUFFER_SIZE) {
 				break;
