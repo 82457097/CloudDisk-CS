@@ -145,7 +145,7 @@ bool Upload::UploadFile(char* fileName) {
 bool Upload::SaveToMysql() {
 	char sql[SQL_LEN] = { '\0' };
 	snprintf(sql, SQL_LEN, "insert into %s values(NULL, '%s', '%s')", TABLE_NAME, fileName, fileId);
-	//cout << sql << endl;
+	cout << sql << endl;
 	int flag = mysql.MysqlQuery(sql);
 	if (flag == 0) {
 		return true;

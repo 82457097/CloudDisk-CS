@@ -26,3 +26,277 @@
 
 [2020.09.22] [15:17:31] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
 
+[2020.09.22] [15:23:18] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:23:18] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:23:18] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:23:18] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:23:22] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:23:22] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:23:22] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:23:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:24:13] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:27:02] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:27:02] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:27:02] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:27:02] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:27:06] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:27:06] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:27:06] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:27:20] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:28:22] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:56:09] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:56:09] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:56:09] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:56:09] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:56:14] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:56:14] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:56:14] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [15:56:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:56:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:56:44] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:56:44] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:59:00] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:59:00] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:59:00] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:59:00] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:59:07] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:59:07] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:59:07] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [15:59:20] [Socket.cpp:SockClose:121][LOG_NORMAL]close success.
+
+[2020.09.22] [15:59:20] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:59:20] [Socket.cpp:SockClose:121][LOG_NORMAL]close success.
+
+[2020.09.22] [15:59:40] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:59:40] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:59:40] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:59:40] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:59:42] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:59:42] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:59:42] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [16:00:02] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:00:02] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:00:02] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:00:02] [Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 539
+
+[2020.09.22] [16:00:02] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:15] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [16:05:16] [MySql.cpp:MysqlConnect:32][LOG_NORMAL]get conn Successful.
+
+[2020.09.22] [16:05:16] [MySql.cpp:MysqlInit:19][LOG_NORMAL]initial Successful.
+
+[2020.09.22] [16:05:16] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [16:05:16] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [16:05:16] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [16:05:20] [Socket.cpp:SockClose:121][LOG_NORMAL]close success.
+
+[2020.09.22] [16:05:23] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [16:05:23] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [16:05:23] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:05:26] [Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 539
+
+[2020.09.22] [16:05:26] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:32] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [16:07:32] [MySql.cpp:MysqlConnect:32][LOG_NORMAL]get conn Successful.
+
+[2020.09.22] [16:07:32] [MySql.cpp:MysqlInit:19][LOG_NORMAL]initial Successful.
+
+[2020.09.22] [16:07:32] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [16:07:32] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [16:07:32] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [16:07:38] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [16:07:38] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [16:07:38] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [16:07:40] [Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 539
+
+[2020.09.22] [16:07:40] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [16:07:42] [MySql.cpp:MysqlQuery:48][LOG_NORMAL]query sql Successful.
+

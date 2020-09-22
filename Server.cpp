@@ -75,6 +75,10 @@ bool Server::WriteFile(int recvfd, int fd) {
 
 int main() {
 	Server server;
+	if (!server.upload.mysql.MysqlInit()) {
+		cout << "Init failed!" << endl;
+		return -1;
+	}
 	
 	if(server.ServerInit()) {
 		cout << "server init success." << endl;
@@ -85,13 +89,12 @@ int main() {
 
 	while(true) {
 		if(server.ServerAccept()) {
+			server.upload.UploadFile(server.file.fileName);
+			server.upload.SaveToMysql();
 			continue;
 		} else {
 			break;
 		}
-
-		server.upload.UploadFile(server.file.fileName);
-		server.upload.SaveToMysql();
 	}
 
 	server.socket.SockClose();

@@ -50,16 +50,26 @@ bool Client::SendFileData() {
 		if(sendLen < 0) {
 			cout << "read error." << endl;
 			break;
-		}
-		cout << "times = " << times << endl;
-		++times;
-		if(socket.SockSend(socket.m_sockfd, file.fileData, BUFFER_SIZE) < 0) {
-			cout << "send failed!" << endl;
-			break;		
-		} else {
-			cout << "send successful!" << endl;
-		}
-		if(sendLen < BUFFER_SIZE) {
+		} else if(sendLen == BUFFER_SIZE) {
+			cout << "times = " << times << endl;
+			++times;
+			if(socket.SockSend(socket.m_sockfd, file.fileData, BUFFER_SIZE) < 0) {
+				cout << "send failed!" << endl;
+				break;		
+			} else {
+				LOG("data len is: %d", sendLen);
+				cout << "send successful!" << endl;
+			}
+		} else if(sendLen < BUFFER_SIZE) {
+			cout << "times = " << times << endl;
+			++times;
+			if(socket.SockSend(socket.m_sockfd, file.fileData, sendLen) < 0) {
+				cout << "send failed!" << endl;
+				break;		
+			} else {
+				LOG("data len is: %d", sendLen);
+				cout << "send successful!" << endl;
+			}
 			break;
 		}
 		memset(file.fileData, 0, BUFFER_SIZE); 
