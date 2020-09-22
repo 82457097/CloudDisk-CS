@@ -1,4 +1,3 @@
-#include<cstdio>
 #include<sys/socket.h>
 #include<sys/types.h>
 #include<cstring>
@@ -11,11 +10,11 @@
 #include<unistd.h>
 #include<arpa/inet.h> 
 #include"file.h"
+#include"logger.h"
 
 #define BUFFER_SIZE 1024
 #define PORT 8888
 #define MAX_CONNECT 20
-//#define ADDR_SIZE sizeof(m_sockaddr)
 
 using namespace std;
 
@@ -40,4 +39,6 @@ public:
 	int sendLen;
 	struct sockaddr_in m_sockaddr;
 };
+
+
 

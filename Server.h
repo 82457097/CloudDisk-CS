@@ -1,85 +1,19 @@
 #include"Socket.h"
+#include"uploadfile.h"
 
 class Server {
 public:
 
 	Socket socket;
 	File file;
+	Upload upload;
 
 	Server() {}
 	~Server() {}
 
-	bool ServerInit() {
-		socket.SockInitServer();
-		socket.SockBind();
-		socket.SockListen();
-		file.fileData = (char*)malloc(BUFFER_SIZE);
-		memset(file.fileData, '\0', sizeof(file.fileData));
+	bool ServerInit();
+	bool ServerAccept();
+	bool GetFileName();
+	bool WriteFile(int recvfd, int fd);
 	
-		return true;
-	}
-	
-	bool ServerAccept() {
-		int recvfd = socket.SockAccpet();
-		cout << socket.SockRecv(recvfd, file.filePath, 100) << endl;
-		cout << "filepath is: " << file.filePath << endl;
-		if(recvfd < 0) {
-			cout << "recv error." << endl;
-			return false;
-		} else {
-			GetFileName();
-		}
-		cout  << "filename: " << file.fileName << endl;
-		
-		int fd = open(file.fileName, O_CREAT | O_RDWR, 0664);
-		if(fd < 0) {
-			cout << "open file failed." << endl;
-			return false;
-		} else {
-			WriteFile(recvfd, fd);
-		}
-	
-		return true;
-	}
-
-	bool GetFileName() {
-		int i = 0, k = 0;
-		for(i = strlen(file.filePath); i >= 0; --i) {
-			if(file.filePath[i] != '/') {
-				++k;
-			} else {
-				break;
-			}
-		}
-		strcpy(file.fileName, file.filePath + (strlen(file.filePath) - k) + 1);
-
-		return true;
-	}
-
-	bool WriteFile(int recvfd, int fd) {
-		int times = 1;
-		while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
-			cout << "times: " << times << endl;
-			cout << socket.recvLen << endl;
-			++times;
-			if(socket.recvLen < 0) {
-				cout << "recv2 error." << endl;
-				break;
-			}
-			write(fd, file.fileData, socket.recvLen);
-			if(socket.recvLen < BUFFER_SIZE) {
-				cout << "write finished." << endl;
-				break;
-			} else {
-				cout << "write success." << endl;
-			}
-			cout << "continue..." << endl;
-			memset(file.fileData, 0, sizeof(file.fileData));
-		}
-		cout << "recv finished." << endl;
-		close(fd);
-
-		return true;
-	}
-
 };

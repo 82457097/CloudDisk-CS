@@ -1,0 +1,28 @@
+[2020.09.22] [15:16:35] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:16:35] [Socket.cpp:SockInitServer:19][LOG_NORMAL]init success.
+
+[2020.09.22] [15:16:35] [Socket.cpp:SockBind:40][LOG_NORMAL]bind success.
+
+[2020.09.22] [15:16:35] [Socket.cpp:SockListen:53][LOG_NORMAL]listen success.
+
+[2020.09.22] [15:16:44] [Socket.cpp:Socket:9][LOG_NORMAL]socket build success.
+
+[2020.09.22] [15:16:44] [Socket.cpp:SockConnect:66][LOG_NORMAL]connect success.
+
+[2020.09.22] [15:16:44] [Socket.cpp:SockAccpet:81][LOG_NORMAL]accept success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockSend:111][LOG_NORMAL]send success.
+
+[2020.09.22] [15:17:02] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
+[2020.09.22] [15:17:31] [Socket.cpp:SockRecv:96][LOG_NORMAL]recv success.
+
