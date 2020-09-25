@@ -10,16 +10,16 @@ All: Client Server
 #		-D_SVID_SOURCE
 
 Client:
-	g++ -std=c++11 -o Client file.h Client* Socket* logger* fast* uploadfile* MySql* \
+	g++ -std=c++11 -o ./bin/Client ./src/file.h ./src/Client* ./src/Socket* ./src/logger* ./src/fast* ./src/uploadfile* ./src/MySql* \
 		-I/usr/include/fastdfs/ -I/usr/include/fastcommon/ \
 		-L/usr/lib64 -lmysqlclient -lpthread -lfdfsclient -lfcgi \
 		-D_SVID_SOURCE
 Server:
-	g++ -std=c++11 -o Server file.h Server* Socket* logger* fast* uploadfile* MySql* \
+	g++ -std=c++11 -o ./bin/Server ./src/file.h ./src/Server* ./src/Socket* ./src/logger* ./src/fast* ./src/uploadfile* ./src/MySql* \
 		-I/usr/include/fastdfs/ -I/usr/include/fastcommon/ \
 		-L/usr/lib64 -lmysqlclient -lpthread -lfdfsclient -lfcgi \
 		-D_SVID_SOURCE
 
 .PHONY: Clean
 Clean:
-	rm Client Server
+	rm ./bin/Client ./bin/Server

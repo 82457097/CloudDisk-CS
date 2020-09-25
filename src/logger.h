@@ -5,7 +5,7 @@
 
 using namespace std;
 
-#define LOG_FILE_NAME "log.txt"
+#define LOG_FILE_NAME "./log/log.txt"
 
 #define LOG(fmt, args...)	do{\
 			char _buf[1024] = {0};\
