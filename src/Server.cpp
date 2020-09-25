@@ -13,18 +13,18 @@ bool Server::ServerInit() {
 bool Server::ServerAccept() {
 	int recvfd = socket.SockAccpet();
 	cout << socket.SockRecv(recvfd, file.filePath, 100) << endl;
-	cout << "filepath is: " << file.filePath << endl;
+	LOG("filepath is: %s", file.filePath);
 	if(recvfd < 0) {
-		cout << "recv error." << endl;
+		LOG("recv error.");
 		return false;
 	} else {
 		GetFileName();
 	}
-	cout  << "filename: " << file.fileName << endl;
+	LOG("filename: %s", file.fileName);
 	
 	int fd = open(file.fileName, O_CREAT | O_RDWR, 0664);
 	if(fd < 0) {
-		cout << "open file failed." << endl;
+		LOG("open file failed.");
 		return false;
 	} else {
 		WriteFile(recvfd, fd);
@@ -50,24 +50,24 @@ bool Server::GetFileName() {
 bool Server::WriteFile(int recvfd, int fd) {
 	int times = 1;
 	while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
-		cout << "times: " << times << endl;
-		cout << socket.recvLen << endl;
+		//cout << "times: " << times << endl;
+		//cout << socket.recvLen << endl;
 		++times;
 		if(socket.recvLen < 0) {
-			cout << "recv2 error." << endl;
+			LOG("recv2 error.");
 			break;
 		}
 		write(fd, file.fileData, socket.recvLen);
 		if(socket.recvLen < BUFFER_SIZE) {
-			cout << "write finished." << endl;
+			LOG("write finished.");
 			break;
 		} else {
-			cout << "write success." << endl;
+			LOG("write success.");
 		}
-		cout << "continue..." << endl;
+		//cout << "continue..." << endl;
 		memset(file.fileData, 0, sizeof(file.fileData));
 	}
-	cout << "recv finished." << endl;
+	LOG("recv finished.");
 	close(fd);
 
 	return true;
@@ -76,14 +76,14 @@ bool Server::WriteFile(int recvfd, int fd) {
 int main() {
 	Server server;
 	if (!server.upload.mysql.MysqlInit()) {
-		cout << "Init failed!" << endl;
+		LOG("Init failed!");
 		return -1;
 	}
 	
 	if(server.ServerInit()) {
-		cout << "server init success." << endl;
+		LOG("server init success.");
 	} else {
-		cout << "server init failed." << endl;
+		LOG("server init failed.");
 		return -1;
 	}
 

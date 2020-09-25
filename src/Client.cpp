@@ -11,7 +11,7 @@ bool Client::ClientInit() {
 
 bool Client::ClientSend() { 		
 	if(!SendFilePath()) {
-		cout << "sendPath failed." << endl;
+		LOG("sendPath failed.");
 		return false;
 	}
 	
@@ -30,14 +30,15 @@ bool Client::SendFilePath() {
 		return false;
 	} else {
 		cout << "filepath : " << file.filePath << endl;
+		LOG("filepath : %s", file.filePath);
 	}
 	
 	sendLen = socket.SockSend(socket.m_sockfd, file.filePath, 100);
 	if(sendLen < 0) {
-		cout << "filepath send error!" << endl;
+		LOG("filepath send error!");
 		return false;
 	} else {
-		cout << "filepath send success!" << endl;
+		LOG("filepath send success!");
 	}
 
 	return true;
@@ -48,27 +49,27 @@ bool Client::SendFileData() {
 	int times = 1;
 	while((sendLen = read(fd, file.fileData, BUFFER_SIZE))) {
 		if(sendLen < 0) {
-			cout << "read error." << endl;
+			LOG("read error.");
 			break;
 		} else if(sendLen == BUFFER_SIZE) {
 			cout << "times = " << times << endl;
 			++times;
 			if(socket.SockSend(socket.m_sockfd, file.fileData, BUFFER_SIZE) < 0) {
-				cout << "send failed!" << endl;
+				LOG("send failed!");
 				break;		
 			} else {
 				LOG("data len is: %d", sendLen);
-				cout << "send successful!" << endl;
+				LOG("send successful!");
 			}
 		} else if(sendLen < BUFFER_SIZE) {
 			cout << "times = " << times << endl;
 			++times;
 			if(socket.SockSend(socket.m_sockfd, file.fileData, sendLen) < 0) {
-				cout << "send failed!" << endl;
+				LOG("send failed!");
 				break;		
 			} else {
 				LOG("data len is: %d", sendLen);
-				cout << "send successful!" << endl;
+				LOG("send successful!");
 			}
 			break;
 		}
@@ -84,9 +85,9 @@ int main() {
 	Client client;
 
 	if(client.ClientInit()) {
-		cout << "client init success." << endl;
+		LOG("client init success.");
 	} else {
-		cout << "client init failed." << endl;
+		LOG("client init failed.");
 	}
 
 	while(true) {
