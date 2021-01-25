@@ -5,7 +5,7 @@ class Server {
 public:
 
 	Socket socket;
-	//File file;
+	File file;
 	Upload upload;
 
 	Server() {}

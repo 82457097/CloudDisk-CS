@@ -33,7 +33,7 @@ bool Upload::AcceptFile() {
 		}
 
 		ParseDataAndSave();
-		UploadFile();
+		UploadFile(fileName);
 		SaveToMysql();
 		free(fileData);
 		unlink(fileName);
@@ -106,7 +106,7 @@ bool Upload::ParseDataAndSave() {
 	return true;
 }
 
-bool Upload::UploadFile() {
+bool Upload::UploadFile(char* fileName) {
 	if (!fastDFS.FdfsClientInit()) {
 		LOG("fastdfs initial failed.");
 		return false;

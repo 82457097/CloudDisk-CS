@@ -14,7 +14,7 @@ using namespace std;
 class File {
 public:
 	char fileName[FILE_NAME_LEN] = { '\0' };
-	char filePath[FILE_PATH_LEN] = { '\0' };
+	char filePath[FILE_PATH_LEN] = {'\0'};
 	char fileId[FILE_ID_LEN] = { '\0' };
 	char *fileData;
 	char *pbegin = nullptr, *pend = nullptr, *ptemp = nullptr;
