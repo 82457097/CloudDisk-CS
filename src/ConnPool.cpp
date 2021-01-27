@@ -1,17 +1,12 @@
-/* 
- * connection_pool.cpp 
- * 
- */  
-   
 #include <stdexcept>  
 #include <exception>  
 #include <stdio.h>  
-#include "connection_pool.h"  
+#include "ConnPool.h"  
    
 using namespace std;  
 using namespace sql;  
    
-ConnPool *ConnPool::connPool = new ConnPool("tcp://127.0.0.1:3306", "root", "123456", 50);   
+ConnPool *ConnPool::connPool = new ConnPool("tcp://127.0.0.1:3306", "root", "qwj19961202", 10);   
    
 //连接池的构造函数  
 ConnPool::ConnPool(string url, string userName, string password, int maxSize) {  
@@ -47,7 +42,7 @@ void ConnPool::InitConnection(int iInitialSize) {
             connList.push_back(conn);  
             ++(this->curSize);  
         } else {  
-            perror("创建CONNECTION出错");  
+            cout << "创建CONNECTION出错" << endl; 
         }  
     }  
     pthread_mutex_unlock(&lock);  
@@ -58,9 +53,11 @@ Connection* ConnPool::CreateConnection() {
     Connection*conn;  
     try {  
         conn = driver->connect(this->url, this->username, this->password); //建立连接  
+		cout << "conn: " << conn << endl;
+	
         return conn;  
     } catch (sql::SQLException&e) {  
-        perror("创建连接出错");  
+		cout << "创建连接出错: " << e.what() <<endl;
         return NULL;  
     } catch (std::runtime_error&e) {  
         perror("运行时出错");  

@@ -1,4 +1,4 @@
-#include "connection_pool.h"  
+#include "ConnPool.h"  
    
 namespace ConnectMySQL {  
    
@@ -14,17 +14,19 @@ void run() {
     con = connpool->GetConnection();  
    
     state = con->createStatement();  
-    state->execute("use holy");  
+    state->execute("use filedata");  
    
     // 查询  
-    result = state->executeQuery("select * from student where id < 1002");  
+    result = state->executeQuery("select * from data where id < 1002");  
    
     // 输出查询  
     while (result->next()) {  
         int id = result->getInt("id");  
-        string name = result->getString("name");  
-        cout << id << " : " << name << endl;  
+        string name = result->getString("filename");  
+		string fileId = result->getString("fileId");
+        cout << id << " : " << name << " : " << fileId <<endl;  
     }  
+	
     delete state;  
     connpool->ReleaseConnection(con);  
 }  
