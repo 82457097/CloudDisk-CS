@@ -5,6 +5,7 @@
 #include<cstdlib>
 #include<fcntl.h>
 #include"file.h"
+#include"ConnPool.h"
 
 using namespace std;
 
@@ -15,8 +16,8 @@ private:
 public:
 	Upload() {}
 	~Upload() {}
-	bool AcceptFile();
+	//bool AcceptFile();
 	bool ParseDataAndSave();
 	bool UploadFile();
-	bool SaveToMysql();
+	bool SaveToMysql(Statement *state);
 };

@@ -1,6 +1,4 @@
-#ifndef _CONNECTION_POOL_H  
-#define _CONNECTION_POOL_H  
-   
+#pragma once
 #include <mysql_connection.h>  
 #include <mysql_driver.h>  
 #include <cppconn/exception.h>  
@@ -14,7 +12,13 @@
    
 using namespace std;  
 using namespace sql;  
-   
+
+#define	USER			"root"
+#define	PASSWORD		"qwj19961202"
+#define	DB_NAME			"filedata"
+#define	TABLE_NAME		"data"
+#define	SQL_LEN			2048
+
 class ConnPool {  
 private:  
     int curSize; //当前已建立的数据库连接数量  
@@ -29,7 +33,7 @@ private:
 
 	ConnPool(string url, string user, string password, int maxSize); //构造方法  
     Connection* CreateConnection(); //创建一个连接  
-    void InitConnection(int iInitialSize); //初始化数据库连接池  
+    bool InitConnection(int iInitialSize); //初始化数据库连接池  
     void DestoryConnection(Connection *conn); //销毁数据库连接对象  
     void DestoryConnPool(); //销毁数据库连接池  
     
@@ -39,4 +43,4 @@ public:
     void ReleaseConnection(Connection *conn); //将数据库连接放回到连接池的容器中  
     static ConnPool *GetInstance(); //获取数据库连接池对象  
 };  
-#endif  /*_CONNECTION_POOL_H */  
+

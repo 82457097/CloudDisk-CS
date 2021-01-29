@@ -300,3 +300,177 @@
 
 [2020.09.22] [16:07:42] [MySql.cpp:MysqlQuery:48][LOG_NORMAL]query sql Successful.
 
+[2021.01.29] [17:48:14] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:48:14] [./src/Socket.cpp:SockInitServer:16][LOG_NORMAL]init success.
+
+[2021.01.29] [17:48:14] [./src/Socket.cpp:SockBind:35][LOG_NORMAL]bind success.
+
+[2021.01.29] [17:48:14] [./src/Socket.cpp:SockListen:46][LOG_NORMAL]listen success.
+
+[2021.01.29] [17:48:14] [./src/Server.cpp:main:90][LOG_NORMAL]server init success.
+
+[2021.01.29] [17:48:36] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:48:36] [./src/Socket.cpp:SockConnect:57][LOG_NORMAL]connect success.
+
+[2021.01.29] [17:48:36] [./src/Socket.cpp:SockAccpet:70][LOG_NORMAL]accept success.
+
+[2021.01.29] [17:48:36] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFilePath:33][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk/test.cgi
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFilePath:41][LOG_NORMAL]filepath send success!
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:ServerAccept:16][LOG_NORMAL]filepath is: /home/junbaba/git/CloudDisk/test.cgi
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:ServerAccept:23][LOG_NORMAL]filename: test.cgi
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:49:10] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]data len is: 56
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:WriteFile:62][LOG_NORMAL]write finished.
+
+[2021.01.29] [17:49:10] [./src/Client.cpp:SendFileData:72][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:49:10] [./src/Server.cpp:WriteFile:70][LOG_NORMAL]recv finished.
+
+[2021.01.29] [17:50:58] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:50:58] [./src/Socket.cpp:SockInitServer:16][LOG_NORMAL]init success.
+
+[2021.01.29] [17:50:58] [./src/Socket.cpp:SockBind:32][LOG_NORMAL]bind error.
+
+[2021.01.29] [17:50:58] [./src/Socket.cpp:SockListen:46][LOG_NORMAL]listen success.
+
+[2021.01.29] [17:50:58] [./src/Server.cpp:main:90][LOG_NORMAL]server init success.
+
+[2021.01.29] [17:51:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:51:20] [./src/Socket.cpp:SockInitServer:16][LOG_NORMAL]init success.
+
+[2021.01.29] [17:51:20] [./src/Socket.cpp:SockBind:32][LOG_NORMAL]bind error.
+
+[2021.01.29] [17:51:20] [./src/Socket.cpp:SockListen:46][LOG_NORMAL]listen success.
+
+[2021.01.29] [17:51:20] [./src/Server.cpp:main:90][LOG_NORMAL]server init success.
+
+[2021.01.29] [17:51:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:51:26] [./src/Socket.cpp:SockInitServer:16][LOG_NORMAL]init success.
+
+[2021.01.29] [17:51:26] [./src/Socket.cpp:SockBind:32][LOG_NORMAL]bind error.
+
+[2021.01.29] [17:51:26] [./src/Socket.cpp:SockListen:46][LOG_NORMAL]listen success.
+
+[2021.01.29] [17:51:26] [./src/Server.cpp:main:90][LOG_NORMAL]server init success.
+
+[2021.01.29] [17:51:38] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:51:38] [./src/Socket.cpp:SockInitServer:16][LOG_NORMAL]init success.
+
+[2021.01.29] [17:51:38] [./src/Socket.cpp:SockBind:35][LOG_NORMAL]bind success.
+
+[2021.01.29] [17:51:38] [./src/Socket.cpp:SockListen:46][LOG_NORMAL]listen success.
+
+[2021.01.29] [17:51:38] [./src/Server.cpp:main:90][LOG_NORMAL]server init success.
+
+[2021.01.29] [17:51:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.01.29] [17:51:42] [./src/Socket.cpp:SockConnect:57][LOG_NORMAL]connect success.
+
+[2021.01.29] [17:51:42] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.01.29] [17:51:42] [./src/Socket.cpp:SockAccpet:70][LOG_NORMAL]accept success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFilePath:33][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk/test.cgi
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFilePath:41][LOG_NORMAL]filepath send success!
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:ServerAccept:16][LOG_NORMAL]filepath is: /home/junbaba/git/CloudDisk/test.cgi
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:ServerAccept:23][LOG_NORMAL]filename: test.cgi
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]data len is: 1024
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:62][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockSend:96][LOG_NORMAL]send success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]data len is: 56
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]write success.
+
+[2021.01.29] [17:51:49] [./src/Client.cpp:SendFileData:72][LOG_NORMAL]send successful!
+
+[2021.01.29] [17:51:49] [./src/Socket.cpp:SockRecv:83][LOG_NORMAL]recv success.
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:WriteFile:62][LOG_NORMAL]write finished.
+
+[2021.01.29] [17:51:49] [./src/Server.cpp:WriteFile:70][LOG_NORMAL]recv finished.
+

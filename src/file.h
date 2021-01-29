@@ -2,10 +2,8 @@
 #include<string>
 #include"fastDFS.h"
 #include"fastCGI.h"
-#include"MySql.h"
 
 using namespace std;
-
 
 #define FILE_NAME_LEN 512
 #define FILE_PATH_LEN 512
@@ -21,7 +19,6 @@ public:
 	char *contentLen;
 	FastDFS fastDFS;
 	FastCGI fastCGI;
-	MySql mysql;
 	
 public:
 	File() {}

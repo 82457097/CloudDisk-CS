@@ -75,10 +75,16 @@ bool Server::WriteFile(int recvfd, int fd) {
 
 int main() {
 	Server server;
-	if (!server.upload.mysql.MysqlInit()) {
-		LOG("Init failed!");
-		return -1;
-	}
+	Connection *conn;
+    Statement *state;
+    ResultSet *result;
+	ConnPool *connpool = ConnPool::GetInstance();
+
+	conn = connpool->GetConnection();
+	state = conn->createStatement();
+	string sql = "use ";
+	sql += DB_NAME;
+	state->execute(sql);
 	
 	if(server.ServerInit()) {
 		LOG("server init success.");
@@ -90,7 +96,7 @@ int main() {
 	while(true) {
 		if(server.ServerAccept()) {
 			server.upload.UploadFile();
-			server.upload.SaveToMysql();
+			server.upload.SaveToMysql(state);
 			continue;
 		} else {
 			break;

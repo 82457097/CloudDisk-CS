@@ -6,7 +6,7 @@
 using namespace std;  
 using namespace sql;  
    
-ConnPool *ConnPool::connPool = new ConnPool("tcp://127.0.0.1:3306", "root", "qwj19961202", 10);   
+ConnPool *ConnPool::connPool = new ConnPool("tcp://127.0.0.1:3306", USER, PASSWORD, 10);   
    
 //连接池的构造函数  
 ConnPool::ConnPool(string url, string userName, string password, int maxSize) {  
@@ -19,21 +19,21 @@ ConnPool::ConnPool(string url, string userName, string password, int maxSize) {
     try {  
         this->driver = sql::mysql::get_driver_instance();  
     } catch (sql::SQLException&e) {  
-        perror("驱动连接出错;\n");  
+        cout << "驱动连接出错" << endl;  
     } catch (std::runtime_error&e) {  
-        perror("运行出错了\n");  
+        cout << "运行出错了" << endl;
     } 
 	
     this->InitConnection(maxSize / 2);  
 }  
    
 //获取连接池对象，单例模式  
-ConnPool*ConnPool::GetInstance() {  
+ConnPool *ConnPool::GetInstance() {  
     return connPool;  
 }  
    
 //初始化连接池，创建最大连接数的一半连接数量  
-void ConnPool::InitConnection(int iInitialSize) {  
+bool ConnPool::InitConnection(int iInitialSize) {  
     Connection*conn;  
     pthread_mutex_lock(&lock);  
     for (int i = 0; i < iInitialSize; i++) {  
@@ -42,10 +42,13 @@ void ConnPool::InitConnection(int iInitialSize) {
             connList.push_back(conn);  
             ++(this->curSize);  
         } else {  
-            cout << "创建CONNECTION出错" << endl; 
+            cout << "create connection failed!" << endl;
+			return false;
         }  
     }  
     pthread_mutex_unlock(&lock);  
+
+	return true;
 }  
    
 //创建连接,返回一个Connection  

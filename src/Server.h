@@ -1,11 +1,12 @@
+#pragma once
 #include"Socket.h"
 #include"uploadfile.h"
+#include"ConnPool.h"
 
 class Server {
 public:
 
 	Socket socket;
-	//File file;
 	Upload upload;
 
 	Server() {}

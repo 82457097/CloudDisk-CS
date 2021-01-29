@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool Upload::AcceptFile() {
+/*bool Upload::AcceptFile() {
 	while (fastCGI.FcgiAccept()) {
 		fastCGI.contentLen = getenv("CONTENT_LENGTH");
 		printf("Content-type: text/html\r\n\r\n");
@@ -40,7 +40,7 @@ bool Upload::AcceptFile() {
 	}
 
 	return true;
-}
+}*/
 
 bool Upload::ParseDataAndSave() {
 	ptemp = strstr(pbegin, "\r\n");
@@ -142,12 +142,11 @@ bool Upload::UploadFile() {
 	return true;
 }
 
-bool Upload::SaveToMysql() {
+bool Upload::SaveToMysql(Statement *state) {
 	char sql[SQL_LEN] = { '\0' };
 	snprintf(sql, SQL_LEN, "insert into %s values(NULL, '%s', '%s')", TABLE_NAME, fileName, fileId);
 	cout << sql << endl;
-	int flag = mysql.MysqlQuery(sql);
-	if (flag == 0) {
+	if (state->execute(sql)) {
 		return true;
 	}
 
