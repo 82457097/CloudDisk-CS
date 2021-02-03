@@ -17,7 +17,7 @@ public:
 	Upload() {}
 	~Upload() {}
 	//bool AcceptFile();
-	bool ParseDataAndSave();
+	//bool ParseDataAndSave();
 	bool UploadFile();
-	bool SaveToMysql(Statement *state);
+	//bool SaveToMysql(Statement *state);
 };

@@ -29,7 +29,6 @@ bool Client::SendFilePath() {
 		cout << "filepath not found!" << endl;
 		return false;
 	} else {
-		cout << "filepath : " << file.filePath << endl;
 		LOG("filepath : %s", file.filePath);
 	}
 	

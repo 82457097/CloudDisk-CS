@@ -11,8 +11,8 @@ Socket::Socket() {
 bool Socket::SockInitServer() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
-	m_sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	m_sockaddr.sin_port = htons(PORT);
+	m_sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	LOG("init success.");
 
 	return true;
@@ -75,7 +75,6 @@ int Socket::SockAccpet() {
 
 int Socket::SockRecv(int recvfd, char buf[], int len) {
 	recvLen = recv(recvfd, buf, len, 0);
-	//cout << buf << endl;
 	if(recvLen < 0) {
 		LOG("recv error.");
 		return -1;

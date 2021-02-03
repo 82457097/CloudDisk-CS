@@ -1,6 +1,5 @@
 #pragma once
 #include<string>
-#include"fastDFS.h"
 #include"fastCGI.h"
 
 using namespace std;
@@ -17,7 +16,6 @@ public:
 	char *fileData;
 	char *pbegin = nullptr, *pend = nullptr, *ptemp = nullptr;
 	char *contentLen;
-	FastDFS fastDFS;
 	FastCGI fastCGI;
 	
 public:
