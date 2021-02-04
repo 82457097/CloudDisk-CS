@@ -1,13 +1,11 @@
 #include "Epoll.h"
 
-int g_epollFd;  
-myevent_s g_Events[MAX_EVENTS+1]; 		// g_Events[MAX_EVENTS] is used by listen fd  
-void RecvData(int fd, int events, void *arg);  
-void SendData(int fd, int events, void *arg);
+Epoll::Epoll() {
+	epollFd = epoll_create(MAX_EVENTS);
+}
 
-// set event  
-void EventSet(myevent_s *ev, int fd, void (*call_back)(int, int, void*), void *arg) {  
-    ev->fd = fd;
+void Epoll::EventSet(MyEvent *ev, int fd, void (*call_back)(int, int, void*), void *arg) {
+	ev->fd = fd;
     ev->call_back = call_back;
     ev->events = 0;
     ev->arg = arg;
@@ -15,198 +13,136 @@ void EventSet(myevent_s *ev, int fd, void (*call_back)(int, int, void*), void *a
     memset(ev->buff, sizeof(ev->buff), 0);
     ev->s_offset = 0;  
     ev->len = 0;
-    ev->last_active = time(NULL);  
+    ev->last_active = time(NULL); 
 }
 
-// add/mod an event to epoll  
-void EventAdd(int epollFd, int events, myevent_s *ev) {  
-    struct epoll_event epv = {0, {0}};  
-    int op;  
-    epv.data.ptr = ev;  
-    epv.events = ev->events = events;  
-    if(ev->status == 1) {  
-        op = EPOLL_CTL_MOD;  
-    } else {  
-        op = EPOLL_CTL_ADD;  
-        ev->status = 1;  
-    }
+void Epoll::EventAdd(int epollFd, int events, MyEvent *ev) {  
+	struct epoll_event epv = {0, {0}};	
+	int oprate;  
+	epv.data.ptr = ev->fd;	
+	epv.events = ev->events = events;  
+	if(ev->status == 1) {  
+		oprate = EPOLL_CTL_MOD;  
+	} else {  
+		oprate = EPOLL_CTL_ADD;  
+		ev->status = 1;  
+	}
 	
-    if (epoll_ctl(epollFd, op, ev->fd, &epv) < 0) {
-        printf("Event Add failed[fd=%d], evnets[%d]\n", ev->fd, events);
-    } else {  
-        printf("Event Add OK[fd=%d], op=%d, evnets[%0X]\n", ev->fd, op, events);  
-    }
+	if (epoll_ctl(epollFd, oprate, ev->fd, &epv) < 0) {
+		printf("Event Add failed[fd=%d], evnets[%d]\n", ev->fd, events);
+	} else {  
+		printf("Event Add OK[fd=%d], op=%d, evnets[%0X]\n", ev->fd, oprate, events);  
+	}
 }
 
-// delete an event from epoll  
-void EventDel(int epollFd, myevent_s *ev) {  
-    struct epoll_event epv = {0, {0}};  
-    if(ev->status != 1) {
+void EventDel(int epollFd, MyEvent *ev) {  
+	struct epoll_event epv = {0, {0}};	
+	if(ev->status != 1) {
 		return;
-    }
-    epv.data.ptr = ev;  
-    ev->status = 0;
-    epoll_ctl(epollFd, EPOLL_CTL_DEL, ev->fd, &epv);  
+	}
+	epv.data.ptr = ev->fd;	
+	ev->status = 0;
+	epoll_ctl(epollFd, EPOLL_CTL_DEL, ev->fd, &epv);  
 }
 
-// accept new connections from clients  
-void AcceptConn(int fd, int events, void *arg) {  
-    struct sockaddr_in sin;  
-    socklen_t len = sizeof(struct sockaddr_in);  
-    int nfd, i;
+bool Epoll::SetNoBlock(int fd) {
+	int opts = fcntl(fd, F_GETFL);
 	
-    // accept  
-    if((nfd = accept(fd, (struct sockaddr*)&sin, &len)) == -1) {  
-        if(errno != EAGAIN && errno != EINTR) {
-			printf("%s: accept, %d", __func__, errno);
-        }
-        return;  
+	if(opts < 0) {
+		cout << "fcntl(sock,GETFL)" << endl;
+		return false;
+	}
+	
+	opts = opts | O_NONBLOCK;
+	if(fcntl(fd, F_SETFL, opts) < 0) {
+		cout << "fcntl(sock,SETFL,opts)" << endl;
+		return false;
+	}
+
+	return true;
+}
+
+void Epoll::AcceptConn(int fd, int events, void *arg) {  
+	int newFd = Socket::SockAccpet();
+	
+ 	int index;
+    for(index = 0; index < MAX_EVENTS; index++) {  
+        if(myEvents[index].status == 0) {  
+            break;  
+        }  
     }
 	
-    do {  
-        for(i = 0; i < MAX_EVENTS; i++) {  
-            if(g_Events[i].status == 0) {  
-                break;  
-            }  
-        }
-		
-        if(i == MAX_EVENTS) {  
-            printf("%s:max connection limit[%d].", __func__, MAX_EVENTS);  
-            break;  
-        }
-		
-        // set nonblocking
-        int iret = 0;
-        if((iret = fcntl(nfd, F_SETFL, O_NONBLOCK)) < 0) {
-            printf("%s: fcntl nonblocking failed:%d", __func__, iret);
-            break;
-        }
-        // add a read event for receive data  
-        EventSet(&g_Events[i], nfd, RecvData, &g_Events[i]);  
-        EventAdd(g_epollFd, EPOLLIN, &g_Events[i]);  
-    }while(0);  
-    printf("new conn[%s:%d][time:%d], pos[%d]\n", inet_ntoa(sin.sin_addr),
-            ntohs(sin.sin_port), g_Events[i].last_active, i);  
+    if(index == MAX_EVENTS) {  
+        printf("%s:max connection limit[%d].", __func__, MAX_EVENTS);  
+        return ; 
+    }
+	
+    // set nonblocking
+    if(SetNoBlock(fd)) {
+        printf("%s: fcntl nonblocking failed.", __func__);
+        return ;
+    }
+	
+    // add a read event for receive data  
+    EventSet(&myEvents[index], newFd, RecvData, &myEvents[index]);  
+    EventAdd(epollFd, EPOLLIN, &myEvents[index]);  
+ 
+    //printf("new conn[%s:%d][time:%d], pos[%d]\n", inet_ntoa(socket.m_sockaddr.sin_addr),
+    //       ntohs(socket.m_sockaddr.sin_port), myEvents[index].last_active, index);  
 } 
 
-// receive data  
-void RecvData(int fd, int events, void *arg) {  
-    struct myevent_s *ev = (struct myevent_s*)arg;  
+void Epoll::RecvData(int fd, int events, void *arg) {  
+    struct MyEvent *ev = static_cast<struct MyEvent*> arg;  
     int len;
     // receive data
-    len = recv(fd, ev->buff+ev->len, sizeof(ev->buff)-1-ev->len, 0);    
-    EventDel(g_epollFd, ev);
+    len = Socket::SockRecv(fd, ev->buff+ev->len, sizeof(ev->buff)-1-ev->len);   
+    EventDel(epollFd, ev);
     if(len > 0) {
         ev->len += len;
         ev->buff[len] = '\0';  
         printf("C[%d]:%s\n", fd, ev->buff);  
         // change to send event  
         EventSet(ev, fd, SendData, ev);  
-        EventAdd(g_epollFd, EPOLLOUT, ev);  
+        EventAdd(epollFd, EPOLLOUT, ev);  
     } else if(len == 0) {  
-        close(ev->fd);  
-        printf("[fd=%d] pos[%d], closed gracefully.\n", fd, ev-g_Events);  
+        Socket::SockClose(ev->fd); 
+        printf("[fd=%d] pos[%d], closed gracefully.\n", fd, ev-epollFd);  
     } else {  
-        close(ev->fd);  
+        Socket::SockClose(ev->fd);  
         printf("recv[fd=%d] error[%d]:%s\n", fd, errno, strerror(errno));  
     }  
-}  
-// send data  
-void SendData(int fd, int events, void *arg) {  
-    struct myevent_s *ev = (struct myevent_s*)arg;  
+} 
+
+void Epoll::SendData(int fd, int events, void *arg) {  
+    struct MyEvent *ev = static_cast<struct MyEvent*> arg;  
     int len;  
-    // send data  
-    len = send(fd, ev->buff + ev->s_offset, ev->len - ev->s_offset, 0);
+    // send data
+    len = Socket::SockSend(fd, ev->buff + ev->s_offset, ev->len - ev->s_offset);
     if(len > 0) {
         printf("send[fd=%d], [%d<->%d]%s\n", fd, len, ev->len, ev->buff);
         ev->s_offset += len;
         if(ev->s_offset == ev->len) {
             // change to receive event
-            EventDel(g_epollFd, ev);  
+            EventDel(epollFd, ev);  
             EventSet(ev, fd, RecvData, ev);  
-            EventAdd(g_epollFd, EPOLLIN, ev);  
+            EventAdd(epollFd, EPOLLIN, ev);  
         }
     } else {  
-        close(ev->fd);  
-        EventDel(g_epollFd, ev);  
+        Socket::SockClose(ev->fd);
+        EventDel(epollFd, ev);  
         printf("send[fd=%d] error[%d]\n", fd, errno);  
     }  
-} 
-
-void InitListenSocket(int epollFd, short port) {  
-    int listenFd = socket(AF_INET, SOCK_STREAM, 0);  
-    fcntl(listenFd, F_SETFL, O_NONBLOCK); // set non-blocking  
-	cout << "Server listen fd: " << listenFd << endl;
-    EventSet(&g_Events[MAX_EVENTS], listenFd, AcceptConn, &g_Events[MAX_EVENTS]);  
-    // add listen socket  
-    EventAdd(epollFd, EPOLLIN, &g_Events[MAX_EVENTS]);
-    // bind & listen  
-    sockaddr_in sin;  
-    memset(&sin, sizeof(sin), 0);  
-    sin.sin_family = AF_INET;  
-    sin.sin_addr.s_addr = INADDR_ANY;  
-    sin.sin_port = htons(port);  
-    bind(listenFd, (const sockaddr*)&sin, sizeof(sin));  
-    listen(listenFd, 5);  
 }
 
-int main(int argc, char **argv) {  
-    unsigned short port = 12345;
-    if(argc == 2) {  
-        port = atoi(argv[1]);  
-    }
-	
-    // create epoll  
-    g_epollFd = epoll_create(MAX_EVENTS);  
-    if(g_epollFd <= 0) {
-		cout <<"create epoll failed." <<endl;
-    }
-	
-	// create & bind listen socket, and add to epoll, set non-blocking
-    InitListenSocket(g_epollFd, port);  
-
-	// event loop  
-    struct epoll_event events[MAX_EVENTS];  
-    printf("server running:port[%d]\n", port);  
-    int checkPos = 0;  
-    while(1) {  
-        // a simple timeout check here, every time 100, better to use a mini-heap, and add timer event  
-        long now = time(NULL);
-		// doesn't check listen fd  
-        for(int i = 0; i < 100; i++, checkPos++) {  
-            if(checkPos == MAX_EVENTS) {
-				checkPos = 0; // recycle
-            }
-            if(g_Events[checkPos].status != 1) {
-				continue;
-            }
-            long duration = now - g_Events[checkPos].last_active;
-			// 60s timeout 
-            if(duration >= 60) {  
-                close(g_Events[checkPos].fd);  
-                printf("[fd=%d] timeout[%d--%d].\n", g_Events[checkPos].fd, g_Events[checkPos].last_active, now);  
-                EventDel(g_epollFd, &g_Events[checkPos]);  
-            }  
-        }  
-        // wait for events to happen  
-        int fds = epoll_wait(g_epollFd, events, MAX_EVENTS, 1000);  
-        if(fds < 0) {  
-            printf("epoll_wait error, exit\n");  
-            break;  
-        }  
-        for(int i = 0; i < fds; i++) {  
-            myevent_s *ev = (struct myevent_s*)events[i].data.ptr;
-			// read event
-            if((events[i].events&EPOLLIN)&&(ev->events&EPOLLIN)) {  
-                ev->call_back(ev->fd, events[i].events, ev->arg);  
-            }
-			// write event
-            if((events[i].events&EPOLLOUT)&&(ev->events&EPOLLOUT)) {  
-                ev->call_back(ev->fd, events[i].events, ev->arg);  
-            }  
-        }  
-    }  
-    // free resource  
-    return 0;  
-} 
+void Epoll::EpollInit(Socket socket) {  
+	SetNoBlock(socket.m_sockfd) 
+	cout << "Server listen fd: " << socket.m_sockfd << endl;
+    // bind & listen  
+	Socket::SockInitServer();
+	Socket::SockBind(); 
+    Socket::SockListen();
+	EventSet(&myEvents[MAX_EVENTS], socket.m_sockfd, AcceptConn, &myEvents[MAX_EVENTS]);  
+    // add listen socket  
+    EventAdd(epollFd, EPOLLIN, &myEvents[MAX_EVENTS]);
+}
 

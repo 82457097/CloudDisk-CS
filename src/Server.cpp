@@ -128,28 +128,47 @@ int main() {
 	string sql = "use ";
 	sql += DB_NAME;
 	state->execute(sql);
-	
-	if(server.ServerInit()) {
-		LOG("server init success.");
-	} else {
-		LOG("server init failed.");
-		server.socket.SockClose();
-		connpool->DestoryConnPool();
-		return -1;
-	}
 
-	while(true) {
-		if(server.ServerAccept()) {
-			server.UploadFile();
-			server.SaveToMysql(state, server.file.fileName, server.file.fileId);
-			continue;
-		} else {
-			break;
-		}
+	Epoll epoll;
+	epoll.EpollInit(server.socket);
 
-		server.socket.SockClose();
-		connpool->DestoryConnPool();
-		return -1;
+	int checkPos = 0;  
+	while(1) {	
+		// a simple timeout check here, every time 100, better to use a mini-heap, and add timer event	
+		long now = time(NULL);
+		// doesn't check listen fd	
+		for(int i = 0; i < 100; i++, checkPos++) {	
+			if(checkPos == MAX_EVENTS) {
+				checkPos = 0; // recycle
+			}
+			if(epoll.myEvents[checkPos].status != 1) {
+				continue;
+			}
+			long duration = now - epoll.myEvents[checkPos].last_active;
+			// 60s timeout 
+			if(duration >= 60) {  
+				Socket::SockClose(epoll.myEvents[checkPos].fd);  
+				printf("[fd=%d] timeout[%d--%d].\n", epoll.myEvents[checkPos].fd, epoll.myEvents[checkPos].last_active, now);  
+				EventDel(epoll.epollFd, &epoll.myEvents[checkPos]);  
+			}  
+		}  
+		// wait for events to happen  
+		int fdNum = epoll_wait(epoll.myEvents, epoll.evList, MAX_EVENTS, 1000);	
+		if(fdNum < 0) {  
+			printf("epoll_wait error, exit\n");  
+			break;	
+		}  
+		for(int i = 0; i < fdNum; i++) {	
+			MyEvent *ev = (struct MyEvent*)epoll.evList[i].data.ptr;
+			// read event
+			if((epoll.evList[i].events&EPOLLIN)&&(ev->events&EPOLLIN)) {	
+				ev->call_back(ev->fd, epoll.evList[i].events, ev->arg);  
+			}
+			// write event
+			if((epoll.evList[i].events&EPOLLOUT)&&(ev->events&EPOLLOUT)) {  
+				ev->call_back(ev->fd, epoll.evList[i].events, ev->arg);  
+			}  
+		}  
 	}
 
 	server.socket.SockClose();

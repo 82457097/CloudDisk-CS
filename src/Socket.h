@@ -24,15 +24,16 @@ public:
 	Socket();
 	~Socket() {}
 
-	bool SockInitServer();
-	bool SockInitClient();
-	bool SockBind();
-	bool SockListen();
-	int SockConnect();
-	int SockAccpet();
-	int SockRecv(int recvfd, char buf[], int len);
-	int SockSend(int sendfd, const char buf[], int len);
+	static bool SockInitServer();
+	static bool SockInitClient();
+	static bool SockBind();
+	static bool SockListen();
+	static int SockConnect();
+	static int SockAccpet();
+	static int SockRecv(int recvfd, char buf[], int len);
+	static int SockSend(int sendfd, const char buf[], int len);
 	bool SockClose();
+	static bool SockClose(int fd);
 
 	int m_sockfd;
 	int recvLen;

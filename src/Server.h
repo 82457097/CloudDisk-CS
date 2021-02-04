@@ -3,6 +3,7 @@
 #include "ConnPool.h"
 #include "file.h"
 #include "fastDFS.h"
+#include "Epoll.h"
 
 class Server {
 public:

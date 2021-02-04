@@ -8,7 +8,7 @@ Socket::Socket() {
 	}
 }
 
-bool Socket::SockInitServer() {
+static bool Socket::SockInitServer() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);
@@ -18,7 +18,7 @@ bool Socket::SockInitServer() {
 	return true;
 }
 
-bool Socket::SockInitClient() {
+static bool Socket::SockInitClient() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);
@@ -27,7 +27,7 @@ bool Socket::SockInitClient() {
 	return true;
 }
 
-bool Socket::SockBind() {
+static bool Socket::SockBind() {
 	if(bind(m_sockfd, (struct sockaddr*)&m_sockaddr, sizeof(m_sockaddr)) == -1) {
 		LOG("bind error.");
 		return false;
@@ -38,7 +38,7 @@ bool Socket::SockBind() {
 	return true;
 }
 
-bool Socket::SockListen() {
+static bool Socket::SockListen() {
 	if(listen(m_sockfd, MAX_CONNECT) == -1) {
 		LOG("listen error.");
 		return false;
@@ -49,7 +49,7 @@ bool Socket::SockListen() {
 	return true;
 }
 
-int Socket::SockConnect() {
+static int Socket::SockConnect() {
 	int sendfd;
 	if((sendfd = connect(m_sockfd, (struct sockaddr*)&m_sockaddr, sizeof(m_sockaddr))) == -1) {
 		LOG("connect failed.");
@@ -61,7 +61,7 @@ int Socket::SockConnect() {
 	return sendfd;
 }
 
-int Socket::SockAccpet() {
+static int Socket::SockAccpet() {
 	int recvfd;
 	unsigned int addrLen = sizeof(m_sockaddr);
 	if((recvfd = accept(m_sockfd, (struct sockaddr*)&m_sockaddr, &addrLen)) == -1) {
@@ -73,7 +73,7 @@ int Socket::SockAccpet() {
 	return recvfd;
 }
 
-int Socket::SockRecv(int recvfd, char buf[], int len) {
+static int Socket::SockRecv(int recvfd, char buf[], int len) {
 	recvLen = recv(recvfd, buf, len, 0);
 	if(recvLen < 0) {
 		LOG("recv error.");
@@ -85,7 +85,7 @@ int Socket::SockRecv(int recvfd, char buf[], int len) {
 	return recvLen;
 }
 
-int Socket::SockSend(int sendfd, const char buf[], int len) {
+static int Socket::SockSend(int sendfd, const char buf[], int len) {
 	sendLen = send(sendfd, buf, len, 0);
 	//cout << buf << endl;
 	if(sendLen < 0) {
@@ -96,6 +96,13 @@ int Socket::SockSend(int sendfd, const char buf[], int len) {
 	}
 
 	return sendLen;
+}
+
+static bool Socket::SockClose(int fd) {
+	close(fd);
+	LOG("close socket: %d success.");
+
+	return true;
 }
 
 
