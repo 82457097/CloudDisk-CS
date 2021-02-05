@@ -24,20 +24,19 @@ public:
 	Socket();
 	~Socket() {}
 
-	static bool SockInitServer();
-	static bool SockInitClient();
-	static bool SockBind();
-	static bool SockListen();
-	static int SockConnect();
-	static int SockAccpet();
+	void SockInitServer();
+	void SockInitClient();
+	bool SockBind();
+	bool SockListen();
+	int SockConnect();
+	static int SockConnect(int sockFd, struct sockaddr_in &sockAddr);
+	static int SockAccpet(int sockFd, struct sockaddr_in &sockAddr);
 	static int SockRecv(int recvfd, char buf[], int len);
 	static int SockSend(int sendfd, const char buf[], int len);
 	bool SockClose();
 	static bool SockClose(int fd);
 
 	int m_sockfd;
-	int recvLen;
-	int sendLen;
 	struct sockaddr_in m_sockaddr;
 };
 

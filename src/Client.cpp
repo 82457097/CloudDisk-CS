@@ -82,7 +82,8 @@ bool Client::SendFileData() {
 
 int main() {
 	Client client;
-
+	Socket socket;
+	
 	if(client.ClientInit()) {
 		LOG("client init success.");
 	} else {

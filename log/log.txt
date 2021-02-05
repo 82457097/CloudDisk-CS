@@ -870,3 +870,87 @@
 
 [2021.01.30] [10:23:36] [./src/Client.cpp:SendFileData:72][LOG_NORMAL]send successful!
 
+[2021.02.05] [17:45:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [17:45:10] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [17:45:10] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [17:45:59] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [17:45:59] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [17:45:59] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [17:48:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [17:48:40] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [17:48:40] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [17:48:40] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [17:50:02] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [17:50:02] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [17:50:02] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [17:50:02] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [17:51:38] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [17:51:38] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [17:51:38] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [17:51:38] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:03:05] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:03:05] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:03:05] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:03:05] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:03:46] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:03:46] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:03:46] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:03:46] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:06:01] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:06:01] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:06:01] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:06:01] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:07:05] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:07:05] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:07:05] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:07:05] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:09:31] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:09:31] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:09:31] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:09:31] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.05] [18:13:47] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.05] [18:13:47] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.05] [18:13:47] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.05] [18:13:47] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+

@@ -1,21 +1,20 @@
-#include <sys/socket.h>  
-#include <sys/epoll.h>  
-#include <netinet/in.h>  
-#include <arpa/inet.h>  
-#include <fcntl.h>  
+#pragma once
+#include <sys/epoll.h>
 #include <unistd.h>  
 #include <stdio.h>
 #include <memory.h>
 #include <errno.h>  
 #include <iostream>
+#include "Socket.h"
 
 using namespace std;
 
 #define MAX_EVENTS 500
 
+class Epoll;
 struct MyEvent     {  
     int fd;  
-    void (*call_back)(int fd, int events, void *arg);  
+    void (*call_back)(Epoll, int, int, void*);  
     int events;  
     void *arg;  
     int status; 		// 1: in epoll wait list, 0 not in  
@@ -24,17 +23,16 @@ struct MyEvent     {
     long last_active; 	// last active time  
 };
 
+static int epollFd;
+static MyEvent myEvents[MAX_EVENTS + 1];
+
 class Epoll {
 public:
-	Socket socket;
-	struct epoll_event m_ev;
 	struct epoll_event evList[MAX_EVENTS];
-	int epollFd;
-	MyEvent myEvents[MAX_EVENTS + 1];
 
 	Epoll();
 	
-	void EventSet(MyEvent *ev, int fd, void (*call_back)(int, int, void*), void *arg);
+	void EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll, int, int, void*), void *arg);
 
 	void EventAdd(int epollFd, int events, MyEvent *ev);
 
@@ -42,11 +40,11 @@ public:
 
 	bool SetNoBlock(int socket);
 
-	void AcceptConn(int fd, int events, void *arg);
+	static void AcceptConn(Epoll epoll, int fd, int events, void *arg);
 
-	void RecvData(int fd, int events, void *arg); 
+	static void RecvData(Epoll epoll, int fd, int events, void *arg); 
 
-	void SendData(int fd, int events, void *arg);
+	static void SendData(Epoll epoll, int fd, int events, void *arg);
 
 	void EpollInit();
 };

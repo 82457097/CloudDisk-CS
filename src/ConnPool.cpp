@@ -119,6 +119,8 @@ void ConnPool::DestoryConnPool() {
     curSize = 0;  
     connList.clear();
     pthread_mutex_unlock(&lock);  
+
+	LOG("connection pool destory success.");
 }  
     
 void ConnPool::DestoryConnection(Connection* conn) {  

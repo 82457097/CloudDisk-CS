@@ -1,16 +1,16 @@
 #include"Server.h"
 
 bool Server::ServerInit() {
-	socket.SockInitServer();
-	socket.SockBind();
-	socket.SockListen();
+	//socket.SockInitServer();
+	//socket.SockBind();
+	//socket.SockListen();
 	file.fileData = (char*)malloc(BUFFER_SIZE);
 	memset(file.fileData, '\0', sizeof(file.fileData));
 
 	return true;
 }
 	
-bool Server::ServerAccept() {
+/*bool Server::ServerAccept() {
 	int recvfd = socket.SockAccpet();
 	socket.SockRecv(recvfd, file.filePath, 100);
 	LOG("filepath is: %s", file.filePath);
@@ -31,7 +31,7 @@ bool Server::ServerAccept() {
 	}
 
 	return true;
-}
+}*/
 
 bool Server::GetFileName() {
 	int i = 0, k = 0;
@@ -47,7 +47,7 @@ bool Server::GetFileName() {
 	return true;
 }
 
-bool Server::WriteFile(int recvfd, int fd) {
+/*bool Server::WriteFile(Socket socket, int recvfd, int fd) {
 	int times = 1;
 	while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
 		++times;
@@ -68,7 +68,7 @@ bool Server::WriteFile(int recvfd, int fd) {
 	close(fd);
 
 	return true;
-}
+}*/
 
 bool Server::UploadFile() {
 	if (!fastDFS.FdfsClientInit()) {
@@ -118,6 +118,7 @@ bool Server::SaveToMysql(Statement* state, string fileName, string fileId) {
 
 int main() {
 	Server server;
+	Epoll epoll;
 	Connection *conn;
     Statement *state;
     ResultSet *result;
@@ -129,8 +130,7 @@ int main() {
 	sql += DB_NAME;
 	state->execute(sql);
 
-	Epoll epoll;
-	epoll.EpollInit(server.socket);
+	epoll.EpollInit();
 
 	int checkPos = 0;  
 	while(1) {	
@@ -141,37 +141,38 @@ int main() {
 			if(checkPos == MAX_EVENTS) {
 				checkPos = 0; // recycle
 			}
-			if(epoll.myEvents[checkPos].status != 1) {
+			if(myEvents[checkPos].status != 1) {
 				continue;
 			}
-			long duration = now - epoll.myEvents[checkPos].last_active;
+			long duration = now - myEvents[checkPos].last_active;
 			// 60s timeout 
-			if(duration >= 60) {  
-				Socket::SockClose(epoll.myEvents[checkPos].fd);  
-				printf("[fd=%d] timeout[%d--%d].\n", epoll.myEvents[checkPos].fd, epoll.myEvents[checkPos].last_active, now);  
-				EventDel(epoll.epollFd, &epoll.myEvents[checkPos]);  
+			if(duration >= 60) {
+				cout << myEvents[checkPos].fd << " time out" <<endl;
+				Socket::SockClose(myEvents[checkPos].fd);
+				printf("[fd=%d] timeout[%d--%d].\n", myEvents[checkPos].fd, myEvents[checkPos].last_active, now);  
+				epoll.EventDel(epollFd, &myEvents[checkPos]);  
 			}  
 		}  
-		// wait for events to happen  
-		int fdNum = epoll_wait(epoll.myEvents, epoll.evList, MAX_EVENTS, 1000);	
-		if(fdNum < 0) {  
-			printf("epoll_wait error, exit\n");  
+		// wait for events to happen
+		int fdNum = epoll_wait(epollFd, epoll.evList, MAX_EVENTS, 1000);
+		cout <<fdNum <<endl;
+		if(fdNum < 0) {	
+			cout << "epoll_wait error." << endl;
 			break;	
 		}  
 		for(int i = 0; i < fdNum; i++) {	
 			MyEvent *ev = (struct MyEvent*)epoll.evList[i].data.ptr;
 			// read event
 			if((epoll.evList[i].events&EPOLLIN)&&(ev->events&EPOLLIN)) {	
-				ev->call_back(ev->fd, epoll.evList[i].events, ev->arg);  
+				ev->call_back(epoll, ev->fd, epoll.evList[i].events, ev->arg);  
 			}
 			// write event
 			if((epoll.evList[i].events&EPOLLOUT)&&(ev->events&EPOLLOUT)) {  
-				ev->call_back(ev->fd, epoll.evList[i].events, ev->arg);  
+				ev->call_back(epoll, ev->fd, epoll.evList[i].events, ev->arg);  
 			}  
 		}  
 	}
 
-	server.socket.SockClose();
 	connpool->DestoryConnPool();
 	
 	return 0;

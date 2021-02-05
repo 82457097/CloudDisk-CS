@@ -8,26 +8,21 @@ Socket::Socket() {
 	}
 }
 
-static bool Socket::SockInitServer() {
+void Socket::SockInitServer() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);
 	m_sockaddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	LOG("init success.");
-
-	return true;
 }
 
-static bool Socket::SockInitClient() {
+void Socket::SockInitClient() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);
 	m_sockaddr.sin_addr.s_addr = inet_addr("127.0.0.1");
-
-	return true;
 }
 
-static bool Socket::SockBind() {
+bool Socket::SockBind() {
 	if(bind(m_sockfd, (struct sockaddr*)&m_sockaddr, sizeof(m_sockaddr)) == -1) {
 		LOG("bind error.");
 		return false;
@@ -38,7 +33,7 @@ static bool Socket::SockBind() {
 	return true;
 }
 
-static bool Socket::SockListen() {
+bool Socket::SockListen() {
 	if(listen(m_sockfd, MAX_CONNECT) == -1) {
 		LOG("listen error.");
 		return false;
@@ -49,7 +44,7 @@ static bool Socket::SockListen() {
 	return true;
 }
 
-static int Socket::SockConnect() {
+int Socket::SockConnect() {
 	int sendfd;
 	if((sendfd = connect(m_sockfd, (struct sockaddr*)&m_sockaddr, sizeof(m_sockaddr))) == -1) {
 		LOG("connect failed.");
@@ -61,10 +56,22 @@ static int Socket::SockConnect() {
 	return sendfd;
 }
 
-static int Socket::SockAccpet() {
+int Socket::SockConnect(int sockFd, struct sockaddr_in &sockAddr) {
+	int sendfd;
+	if((sendfd = connect(sockFd, (struct sockaddr*)&sockAddr, sizeof(sockAddr))) == -1) {
+		LOG("connect failed.");
+	} else {
+		LOG("connect success.");
+	}
+
+
+	return sendfd;
+}
+
+int Socket::SockAccpet(int sockFd, struct sockaddr_in &sockAddr) {
 	int recvfd;
-	unsigned int addrLen = sizeof(m_sockaddr);
-	if((recvfd = accept(m_sockfd, (struct sockaddr*)&m_sockaddr, &addrLen)) == -1) {
+	unsigned int addrLen = sizeof(sockAddr);
+	if((recvfd = accept(sockFd, (struct sockaddr*)&sockAddr, &addrLen)) == -1) {
 		LOG("accept fialed.");
 	} else {
 		LOG("accept success.");
@@ -73,8 +80,8 @@ static int Socket::SockAccpet() {
 	return recvfd;
 }
 
-static int Socket::SockRecv(int recvfd, char buf[], int len) {
-	recvLen = recv(recvfd, buf, len, 0);
+int Socket::SockRecv(int recvfd, char buf[], int len) {
+	int recvLen = recv(recvfd, buf, len, 0);
 	if(recvLen < 0) {
 		LOG("recv error.");
 		return -1;
@@ -85,9 +92,8 @@ static int Socket::SockRecv(int recvfd, char buf[], int len) {
 	return recvLen;
 }
 
-static int Socket::SockSend(int sendfd, const char buf[], int len) {
-	sendLen = send(sendfd, buf, len, 0);
-	//cout << buf << endl;
+int Socket::SockSend(int sendfd, const char buf[], int len) {
+	int sendLen = send(sendfd, buf, len, 0);
 	if(sendLen < 0) {
 		LOG("send failed.");
 		return -1;
@@ -98,9 +104,9 @@ static int Socket::SockSend(int sendfd, const char buf[], int len) {
 	return sendLen;
 }
 
-static bool Socket::SockClose(int fd) {
+bool Socket::SockClose(int fd) {
 	close(fd);
-	LOG("close socket: %d success.");
+	LOG("close socket: %d success.", fd);
 
 	return true;
 }

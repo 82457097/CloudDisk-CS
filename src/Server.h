@@ -1,5 +1,4 @@
 #pragma once
-#include "Socket.h"
 #include "ConnPool.h"
 #include "file.h"
 #include "fastDFS.h"
@@ -8,7 +7,7 @@
 class Server {
 public:
 
-	Socket socket;
+	//Socket socket;
 	File file;
 	FastDFS fastDFS;
 
@@ -16,9 +15,9 @@ public:
 	~Server() {}
 
 	bool ServerInit();
-	bool ServerAccept();
+	//bool ServerAccept();
 	bool GetFileName();
-	bool WriteFile(int recvfd, int fd);
+	//bool WriteFile(Socket socket,int recvfd, int fd);
 	bool UploadFile();
 	bool SaveToMysql(Statement* state, string fileName, string fileId);
 	
