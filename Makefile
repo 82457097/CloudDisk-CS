@@ -9,15 +9,14 @@ All: Client Server
 #		-D_SVID_SOURCE
 
 Client:
-	g++ -std=c++11 -o ./bin/Client ./src/file.h ./src/Client* ./src/Socket* ./src/logger* ./src/fast* \
-		-I/usr/include/fastdfs/ -I/usr/include/fastcommon/ \
-		-L/usr/lib64 -lmysqlclient -lpthread -lfdfsclient -lfcgi \
+	g++ -std=c++11 -o ./bin/Client ./src/file.h ./src/Client* ./src/Socket* ./src/logger* \
+		-L/usr/lib64 -lmysqlclient -lpthread \
 
 Server:
-	g++ -std=c++11 -o ./bin/Server ./src/file.h ./src/Server* ./src/Socket* ./src/logger* ./src/fast* ./src/ConnPool* ./src/Epoll.* \
+	g++ -std=c++11 -o ./bin/Server ./src/file.h ./src/Server* ./src/Socket* ./src/logger* ./src/fastDFS* ./src/ConnPool* ./src/Epoll.* \
         -lmysqlcppconn  -L/usr/local/lib \
 		-I/usr/include/fastdfs/ -I/usr/include/fastcommon/ \
-		-L/usr/lib64 -lmysqlclient -lpthread -lfdfsclient -lfcgi \
+		-L/usr/lib64 -lmysqlclient -lpthread -lfdfsclient \
 
 .PHONY: Clean
 Clean:

@@ -1,6 +1,5 @@
 #pragma once
 #include<string>
-#include"fastCGI.h"
 
 using namespace std;
 
@@ -14,9 +13,6 @@ public:
 	char filePath[FILE_PATH_LEN] = { '\0' };
 	char fileId[FILE_ID_LEN] = { '\0' };
 	char *fileData;
-	char *pbegin = nullptr, *pend = nullptr, *ptemp = nullptr;
-	char *contentLen;
-	FastCGI fastCGI;
 	
 public:
 	File() {}

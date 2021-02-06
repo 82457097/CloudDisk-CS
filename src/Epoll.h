@@ -29,8 +29,13 @@ static MyEvent myEvents[MAX_EVENTS + 1];
 class Epoll {
 public:
 	struct epoll_event evList[MAX_EVENTS];
+	int epollFd;
+	MyEvent myEvents[MAX_EVENTS + 1];
 
-	Epoll();
+	Epoll() {
+		epollFd = epoll_create(MAX_EVENTS);
+	}
+	~Epoll() {}
 	
 	void EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll, int, int, void*), void *arg);
 

@@ -954,3 +954,755 @@
 
 [2021.02.05] [18:13:47] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
 
+[2021.02.06] [13:18:23] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [13:18:23] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [13:18:23] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [13:18:23] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.06] [13:19:36] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [13:19:36] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [13:19:36] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [13:19:36] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.06] [13:23:52] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [13:23:52] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [13:23:52] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [13:23:52] [./src/ConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.02.06] [13:57:08] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [13:57:08] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [13:57:08] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [13:57:29] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [13:57:29] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [13:57:29] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [13:57:47] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [13:58:08] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [13:58:49] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:01:53] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:01:53] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.06] [14:01:53] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:02:29] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:02:29] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.06] [14:02:29] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:03:36] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:03:36] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [14:03:36] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:03:40] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:03:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:03:46] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:04:33] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:04:33] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.06] [14:04:33] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:05:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:05:13] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [14:05:13] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:05:16] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:05:18] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:05:21] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:13:22] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:13:22] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [14:13:22] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:13:26] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:13:27] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:13:30] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:18:04] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:18:04] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [14:18:04] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:18:13] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:18:16] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:18:17] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:31:15] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:15] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:15] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:31:15] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:31:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:26] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:31:26] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:31:43] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:31:43] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:31:43] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:31:43] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:31:43] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:32:19] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:32:19] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:SockConnect:50][LOG_NORMAL]connect failed.
+
+[2021.02.06] [14:32:19] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:32:19] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:32:19] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:32:41] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:41] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.06] [14:32:41] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:32:47] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:32:47] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:32:47] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:32:47] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:32:47] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:33:08] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:33:08] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:33:08] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:33:08] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:33:08] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:33:42] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:33:42] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:33:42] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:33:42] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:33:42] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:03] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:03] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:03] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:03] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:03] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:34:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:34:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:39:10] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:39:10] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.06] [14:40:44] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+

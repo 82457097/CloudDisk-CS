@@ -6,8 +6,6 @@
 
 class Server {
 public:
-
-	//Socket socket;
 	File file;
 	FastDFS fastDFS;
 

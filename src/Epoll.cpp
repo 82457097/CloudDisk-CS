@@ -1,9 +1,5 @@
 #include "Epoll.h"
 
-Epoll::Epoll() {
-	epollFd = epoll_create(MAX_EVENTS);
-}
-
 void Epoll::EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll, int, int, void*), void *arg) {
 	ev->fd = fd;
     ev->call_back = call_back;
@@ -17,8 +13,8 @@ void Epoll::EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll, int, int, voi
 	cout << "listen fd: " << ev->fd <<endl;
 }
 
-void Epoll::EventAdd(int epollFd, int events, MyEvent *ev) {
-	cout << "epollFd: " <<epollFd <<endl;
+void Epoll::EventAdd(int epollfd, int events, MyEvent *ev) {
+	cout << "epollFd: " << epollfd <<endl;
 	struct epoll_event epv = {0, {0}};	
 	int oprate;  
 	epv.data.ptr = &(ev->fd);	
@@ -30,7 +26,7 @@ void Epoll::EventAdd(int epollFd, int events, MyEvent *ev) {
 		ev->status = 1;  
 	}
 	
-	if (epoll_ctl(epollFd, oprate, ev->fd, &epv) < 0) {
+	if (epoll_ctl(epollfd, oprate, ev->fd, &epv) < 0) {
 		printf("Event Add failed[fd=%d], evnets[%d]\n", ev->fd, events);
 	} else {  
 		printf("Event Add OK[fd=%d], op=%d, evnets[%0X]\n", ev->fd, oprate, events);
@@ -38,14 +34,14 @@ void Epoll::EventAdd(int epollFd, int events, MyEvent *ev) {
 	}
 }
 
-void Epoll::EventDel(int epollFd, MyEvent *ev) {  
+void Epoll::EventDel(int epollfd, MyEvent *ev) {  
 	struct epoll_event epv = {0, {0}};	
 	if(ev->status != 1) {
 		return;
 	}
 	epv.data.ptr = &(ev->fd);	
 	ev->status = 0;
-	epoll_ctl(epollFd, EPOLL_CTL_DEL, ev->fd, &epv);  
+	epoll_ctl(epollfd, EPOLL_CTL_DEL, ev->fd, &epv);  
 }
 
 bool Epoll::SetNoBlock(int fd) {
@@ -69,10 +65,10 @@ void Epoll::AcceptConn(Epoll epoll, int fd, int events, void *arg) {
 	struct sockaddr_in sin;  
     socklen_t len = sizeof(struct sockaddr_in); 
 	int newFd = Socket::SockAccpet(fd, sin);
-	
+	cout << "new fd: " << newFd << endl;
  	int index;
     for(index = 0; index < MAX_EVENTS; index++) {  
-        if(myEvents[index].status == 0) {  
+        if(epoll.myEvents[index].status == 0) {  
             break;  
         }  
     }
@@ -83,17 +79,17 @@ void Epoll::AcceptConn(Epoll epoll, int fd, int events, void *arg) {
     }
 	
     // set nonblocking
-    if(epoll.SetNoBlock(fd)) {
-        printf("%s: fcntl nonblocking failed.", __func__);
+    if(epoll.SetNoBlock(newFd)) {
+        printf("%s: fcntl nonblocking success.\n", __func__);
         return ;
     }
 	struct myevent_s *ev = (struct myevent_s*)arg;
     // add a read event for receive data  
-    epoll.EventSet(&myEvents[index], newFd, RecvData, &myEvents[index]);  
-    epoll.EventAdd(epollFd, EPOLLIN, &myEvents[index]);  
+    epoll.EventSet(&(epoll.myEvents[index]), newFd, RecvData, &(epoll.myEvents[index]));  
+    epoll.EventAdd(epoll.epollFd, EPOLLIN, &(epoll.myEvents[index]));  
  
-    printf("new conn[%s:%d][time:%d], pos[%d]\n", inet_ntoa(sin.sin_addr),
-		ntohs(sin.sin_port), myEvents[index].last_active, index);  
+    printf("new conn[%s:%d][time:%ld], pos[%d]\n", inet_ntoa(sin.sin_addr),
+		ntohs(sin.sin_port), epoll.myEvents[index].last_active, index);  
 } 
 
 void Epoll::RecvData(Epoll epoll, int fd, int events, void *arg) {  
@@ -101,17 +97,17 @@ void Epoll::RecvData(Epoll epoll, int fd, int events, void *arg) {
     int len;
     // receive data
     len = Socket::SockRecv(fd, ev->buff+ev->len, sizeof(ev->buff)-1-ev->len);   
-    epoll.EventDel(epollFd, ev);
+    epoll.EventDel(epoll.epollFd, ev);
     if(len > 0) {
         ev->len += len;
         ev->buff[len] = '\0';  
         printf("C[%d]:%s\n", fd, ev->buff);  
         // change to send event  
         epoll.EventSet(ev, fd, SendData, ev);  
-        epoll.EventAdd(epollFd, EPOLLOUT, ev);  
+        epoll.EventAdd(epoll.epollFd, EPOLLOUT, ev);  
     } else if(len == 0) {  
         Socket::SockClose(ev->fd); 
-        printf("[fd=%d] pos[%d], closed gracefully.\n", fd, ev-epollFd);  
+        printf("[fd=%d] pos[%d], closed gracefully.\n", fd, epoll.epollFd);  
     } else {  
         Socket::SockClose(ev->fd);  
         printf("recv[fd=%d] error[%d]:%s\n", fd, errno, strerror(errno));  
@@ -128,13 +124,13 @@ void Epoll::SendData(Epoll epoll, int fd, int events, void *arg) {
         ev->s_offset += len;
         if(ev->s_offset == ev->len) {
             // change to receive event
-            epoll.EventDel(epollFd, ev);  
+            epoll.EventDel(epoll.epollFd, ev);  
             epoll.EventSet(ev, fd, RecvData, ev);  
-            epoll.EventAdd(epollFd, EPOLLIN, ev);  
+            epoll.EventAdd(epoll.epollFd, EPOLLIN, ev);  
         }
     } else {  
         Socket::SockClose(ev->fd);
-        epoll.EventDel(epollFd, ev);  
+        epoll.EventDel(epoll.epollFd, ev);  
         printf("send[fd=%d] error[%d]\n", fd, errno);  
     }  
 }
@@ -142,13 +138,13 @@ void Epoll::SendData(Epoll epoll, int fd, int events, void *arg) {
 void Epoll::EpollInit() {
 	Socket socket;
 	SetNoBlock(socket.m_sockfd);
-	cout << "Server listen fd: " << socket.m_sockfd << endl;
-    // bind & listen  
+	// bind & listen  
 	socket.SockInitServer();
 	socket.SockBind(); 
     socket.SockListen();
-	EventSet(&myEvents[MAX_EVENTS], socket.m_sockfd, AcceptConn, &myEvents[MAX_EVENTS]);  
+	cout << "Server listen fd: " << socket.m_sockfd << endl;
+	EventSet(&(this->myEvents[MAX_EVENTS]), socket.m_sockfd, AcceptConn, &(this->myEvents[MAX_EVENTS]));  
     // add listen socket  
-    EventAdd(epollFd, EPOLLIN, &myEvents[MAX_EVENTS]);
+    EventAdd(this->epollFd, EPOLLIN, &(this->myEvents[MAX_EVENTS]));
 }
 

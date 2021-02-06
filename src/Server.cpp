@@ -141,23 +141,23 @@ int main() {
 			if(checkPos == MAX_EVENTS) {
 				checkPos = 0; // recycle
 			}
-			if(myEvents[checkPos].status != 1) {
+			if(epoll.myEvents[checkPos].status != 1) {
 				continue;
 			}
-			long duration = now - myEvents[checkPos].last_active;
+			long duration = now - epoll.myEvents[checkPos].last_active;
 			// 60s timeout 
 			if(duration >= 60) {
-				cout << myEvents[checkPos].fd << " time out" <<endl;
-				Socket::SockClose(myEvents[checkPos].fd);
-				printf("[fd=%d] timeout[%d--%d].\n", myEvents[checkPos].fd, myEvents[checkPos].last_active, now);  
-				epoll.EventDel(epollFd, &myEvents[checkPos]);  
+				cout << epoll.myEvents[checkPos].fd << " time out" <<endl;
+				Socket::SockClose(epoll.myEvents[checkPos].fd);
+				printf("[fd=%d] timeout[%ld--%ld].\n", epoll.myEvents[checkPos].fd, epoll.myEvents[checkPos].last_active, now);  
+				epoll.EventDel(epoll.epollFd, &(epoll.myEvents[checkPos]));  
 			}  
 		}  
 		// wait for events to happen
-		int fdNum = epoll_wait(epollFd, epoll.evList, MAX_EVENTS, 1000);
-		cout <<fdNum <<endl;
+		int fdNum = epoll_wait(epoll.epollFd, epoll.evList, MAX_EVENTS, 10000);
+		cout << fdNum <<endl;
 		if(fdNum < 0) {	
-			cout << "epoll_wait error." << endl;
+			cout << "epoll_wait error." << strerror(errno) << endl;
 			break;	
 		}  
 		for(int i = 0; i < fdNum; i++) {	
