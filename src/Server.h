@@ -10,13 +10,19 @@ public:
 	FastDFS fastDFS;
 
 	Server() {}
+	
 	~Server() {}
 
 	bool ServerInit();
+	
 	//bool ServerAccept();
+	
 	bool GetFileName();
+	
 	//bool WriteFile(Socket socket,int recvfd, int fd);
+	
 	bool UploadFile();
+	
 	bool SaveToMysql(Statement* state, string fileName, string fileId);
 	
 };

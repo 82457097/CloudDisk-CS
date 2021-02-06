@@ -1,9 +1,6 @@
 #include"Server.h"
 
 bool Server::ServerInit() {
-	//socket.SockInitServer();
-	//socket.SockBind();
-	//socket.SockListen();
 	file.fileData = (char*)malloc(BUFFER_SIZE);
 	memset(file.fileData, '\0', sizeof(file.fileData));
 

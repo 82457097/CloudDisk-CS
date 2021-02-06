@@ -25,15 +25,25 @@ public:
 	~Socket() {}
 
 	void SockInitServer();
+	
 	void SockInitClient();
+	
 	bool SockBind();
+	
 	bool SockListen();
+	
 	int SockConnect();
+	
 	static int SockConnect(int sockFd, struct sockaddr_in &sockAddr);
+	
 	static int SockAccpet(int sockFd, struct sockaddr_in &sockAddr);
+	
 	static int SockRecv(int recvfd, char buf[], int len);
+	
 	static int SockSend(int sendfd, const char buf[], int len);
+	
 	bool SockClose();
+	
 	static bool SockClose(int fd);
 
 	int m_sockfd;

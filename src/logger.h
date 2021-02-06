@@ -21,7 +21,9 @@ public:
 	~Logger();
 
 	static void Log(const string& logMsg);
+	
 	static string TimeStamp();
+	
 	static string DateStamp();
 	
 private:
