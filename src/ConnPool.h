@@ -1,4 +1,3 @@
-#pragma once
 #include <mysql_connection.h>  
 #include <mysql_driver.h>  
 #include <cppconn/exception.h>  

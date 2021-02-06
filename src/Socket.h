@@ -9,7 +9,6 @@
 #include<sys/stat.h>
 #include<unistd.h>
 #include<arpa/inet.h> 
-#include"file.h"
 #include"logger.h"
 
 #define BUFFER_SIZE 1024
@@ -20,8 +19,8 @@ using namespace std;
 
 class Socket {
 public:
-	
 	Socket();
+	
 	~Socket() {}
 
 	void SockInitServer();

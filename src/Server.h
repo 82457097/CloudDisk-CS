@@ -1,4 +1,3 @@
-#pragma once
 #include "ConnPool.h"
 #include "file.h"
 #include "fastDFS.h"
