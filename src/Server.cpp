@@ -119,40 +119,41 @@ int main() {
 	Connection *conn;
     Statement *state;
     ResultSet *result;
+	
 	ConnPool *connpool = ConnPool::GetInstance();
-
 	conn = connpool->GetConnection();
 	state = conn->createStatement();
 	string sql = "use ";
 	sql += DB_NAME;
 	state->execute(sql);
-
 	epoll.EpollInit();
 
 	int checkPos = 0;  
 	while(1) {	
 		// a simple timeout check here, every time 100, better to use a mini-heap, and add timer event	
 		long now = time(NULL);
-		// doesn't check listen fd	
+	
 		for(int i = 0; i < 100; i++, checkPos++) {	
 			if(checkPos == MAX_EVENTS) {
-				checkPos = 0; // recycle
+				checkPos = 0;
 			}
+			
 			if(epoll.myEvents[checkPos].status != 1) {
 				continue;
 			}
+			
 			long duration = now - epoll.myEvents[checkPos].last_active;
-			// 60s timeout 
 			if(duration >= 60) {
-				cout << epoll.myEvents[checkPos].fd << " time out" <<endl;
+				LOG("fd: %d time out.", epoll.myEvents[checkPos].fd);
+				//cout << epoll.myEvents[checkPos].fd << " time out" <<endl;
 				Socket::SockClose(epoll.myEvents[checkPos].fd);
 				printf("[fd=%d] timeout[%ld--%ld].\n", epoll.myEvents[checkPos].fd, epoll.myEvents[checkPos].last_active, now);  
 				epoll.EventDel(epoll.epollFd, &(epoll.myEvents[checkPos]));  
 			}  
 		}  
-		// wait for events to happen
-		int fdNum = epoll_wait(epoll.epollFd, epoll.evList, MAX_EVENTS, 10000);
-		cout << fdNum <<endl;
+
+		int fdNum = epoll_wait(epoll.epollFd, epoll.evList, MAX_EVENTS, -1);
+		cout << fdNum << endl;
 		if(fdNum < 0) {	
 			cout << "epoll_wait error." << strerror(errno) << endl;
 			break;	
@@ -160,12 +161,12 @@ int main() {
 		for(int i = 0; i < fdNum; i++) {	
 			MyEvent *ev = (struct MyEvent*)epoll.evList[i].data.ptr;
 			// read event
-			if((epoll.evList[i].events&EPOLLIN)&&(ev->events&EPOLLIN)) {	
-				ev->call_back(epoll, ev->fd, epoll.evList[i].events, ev->arg);  
+			if((epoll.evList[i].events&EPOLLIN) && (ev->events&EPOLLIN)) {	
+				ev->call_back(&epoll, ev->fd, epoll.evList[i].events, ev->arg);  
 			}
 			// write event
-			if((epoll.evList[i].events&EPOLLOUT)&&(ev->events&EPOLLOUT)) {  
-				ev->call_back(epoll, ev->fd, epoll.evList[i].events, ev->arg);  
+			if((epoll.evList[i].events&EPOLLOUT) && (ev->events&EPOLLOUT)) {  
+				ev->call_back(&epoll, ev->fd, epoll.evList[i].events, ev->arg);  
 			}  
 		}  
 	}

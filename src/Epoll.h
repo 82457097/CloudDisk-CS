@@ -12,18 +12,15 @@ using namespace std;
 
 class Epoll;
 struct MyEvent     {  
-    int fd;  
-    void (*call_back)(Epoll, int, int, void*);  
-    int events;  
-    void *arg;  
-    int status; 		// 1: in epoll wait list, 0 not in  
-    char buff[128]; 	// recv data buffer  
+    int fd;
+	int events;
+	int status; 		// 1: in epoll wait list, 0 not in  
     int len, s_offset;  
-    long last_active; 	// last active time  
+    long last_active; 	// last active time
+    void (*call_back)(Epoll*, int, int, void*);    
+    void *arg;  
+    char buff[128]; 	// recv data buffer  
 };
-
-static int epollFd;
-static MyEvent myEvents[MAX_EVENTS + 1];
 
 class Epoll {
 public:
@@ -36,7 +33,7 @@ public:
 	}
 	~Epoll() {}
 	
-	void EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll, int, int, void*), void *arg);
+	void EventSet(MyEvent *ev, int fd, void (*call_back)(Epoll*, int, int, void*), void *arg);
 
 	void EventAdd(int epollFd, int events, MyEvent *ev);
 
@@ -44,11 +41,11 @@ public:
 
 	bool SetNoBlock(int socket);
 
-	static void AcceptConn(Epoll epoll, int fd, int events, void *arg);
+	static void AcceptConn(Epoll *epoll, int fd, int events, void *arg);
 
-	static void RecvData(Epoll epoll, int fd, int events, void *arg); 
+	static void RecvData(Epoll *epoll, int fd, int events, void *arg); 
 
-	static void SendData(Epoll epoll, int fd, int events, void *arg);
+	static void SendData(Epoll *epoll, int fd, int events, void *arg);
 
 	void EpollInit();
 };

@@ -1706,3 +1706,289 @@
 
 [2021.02.06] [14:40:44] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
 
+[2021.02.07] [15:08:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:08:20] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:08:20] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:08:54] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:08:54] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:08:54] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:08:54] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:08:54] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:08:54] [./src/Epoll.cpp:AcceptConn:67][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:08:54] [./src/Epoll.cpp:AcceptConn:83][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:10:23] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:10:23] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:10:23] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:10:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:10:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:10:26] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:10:26] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:10:26] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:10:26] [./src/Epoll.cpp:AcceptConn:67][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:10:26] [./src/Epoll.cpp:AcceptConn:83][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:10:31] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:10:31] [./src/Epoll.cpp:AcceptConn:67][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:10:31] [./src/Epoll.cpp:AcceptConn:83][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:13:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:13:10] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:13:10] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:13:12] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:13:12] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:13:12] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:13:12] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:13:12] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:13:12] [./src/Epoll.cpp:AcceptConn:67][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:13:12] [./src/Epoll.cpp:AcceptConn:83][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:13:14] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:13:14] [./src/Epoll.cpp:AcceptConn:67][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:13:14] [./src/Epoll.cpp:AcceptConn:83][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:13:22] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.07] [15:13:22] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 0 success.
+
+[2021.02.07] [15:23:07] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:23:07] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:23:07] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:23:18] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:23:18] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:23:18] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:23:18] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:23:18] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:23:18] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:23:18] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:23:23] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:23:23] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:23:23] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:29:37] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:29:37] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.07] [15:29:37] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:29:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:29:40] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.07] [15:29:40] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:30:45] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:30:45] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:30:45] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:31:25] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:31:25] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:31:25] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:31:28] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:31:28] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:31:28] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:31:28] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:31:28] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:31:28] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:31:28] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:31:30] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:31:30] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:31:30] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:31:48] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.07] [15:31:48] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 0 success.
+
+[2021.02.07] [15:34:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:34:40] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:34:40] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:34:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:34:43] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:34:43] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:34:43] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:34:43] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:34:43] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:34:43] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:34:46] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:34:46] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:34:46] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:35:00] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:35:00] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 15.
+
+[2021.02.07] [15:35:00] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:35:15] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.07] [15:35:15] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 0 success.
+
+[2021.02.07] [15:40:16] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:40:16] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:40:16] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:40:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:40:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:40:20] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:40:20] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:40:20] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:40:20] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:40:20] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:40:30] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:40:30] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:40:30] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:42:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:42:17] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:42:17] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:42:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:42:20] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:42:20] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:42:20] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:42:20] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:42:20] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:42:20] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:42:28] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:42:28] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:42:28] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:58:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:58:10] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.07] [15:58:10] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.07] [15:58:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:58:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.07] [15:58:13] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.07] [15:58:13] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.07] [15:58:13] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:58:13] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.07] [15:58:13] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:58:22] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:58:22] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.07] [15:58:22] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:58:29] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.07] [15:58:29] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 15.
+
+[2021.02.07] [15:58:29] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.07] [15:58:38] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.07] [15:58:38] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 13 success.
+
+[2021.02.07] [15:58:38] [./src/Server.cpp:main:147][LOG_NORMAL]fd: 1 time out.
+
+[2021.02.07] [15:58:38] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 1 success.
+
+[2021.02.07] [15:58:42] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.07] [15:58:42] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 14 success.
+
+[2021.02.07] [15:58:43] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.07] [15:58:43] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 15 success.
+
