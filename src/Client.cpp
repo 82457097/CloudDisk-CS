@@ -23,7 +23,7 @@ bool Client::ClientSend() {
 bool Client::SendFilePath() {
 	cout << "please input file path: " << endl;
 	cin >> file.filePath;
- 
+ 	
 	fd = open(file.filePath, O_RDWR, 0664);
 	if(fd < 0) {
 		cout << "filepath not found!" << endl;
@@ -31,7 +31,7 @@ bool Client::SendFilePath() {
 	} else {
 		LOG("filepath : %s", file.filePath);
 	}
-	
+
 	sendLen = socket.SockSend(socket.m_sockfd, file.filePath, 100);
 	if(sendLen < 0) {
 		LOG("filepath send error!");
