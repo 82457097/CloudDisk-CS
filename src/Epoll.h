@@ -18,8 +18,9 @@ struct MyEvent     {
     int len, s_offset;  
     long last_active; 	// last active time
     void (*call_back)(Epoll*, int, int, void*);    
-    void *arg;  
-    char buff[128]; 	// recv data buffer  
+    void *arg;
+	char *fileName;
+    char buff[BUFFER_SIZE]; 	// recv data buffer  
 };
 
 class Epoll {
@@ -48,4 +49,8 @@ public:
 	static void SendData(Epoll *epoll, int fd, int events, void *arg);
 
 	void EpollInit();
+
+	void GetFileName(char * fileName, char * filePath);
+
+	void WriteFile(int recvfd, int fd, char * buff);
 };

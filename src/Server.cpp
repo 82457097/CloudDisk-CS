@@ -28,7 +28,7 @@ bool Server::ServerInit() {
 	}
 
 	return true;
-}*/
+}
 
 bool Server::GetFileName() {
 	int i = 0, k = 0;
@@ -42,9 +42,9 @@ bool Server::GetFileName() {
 	strcpy(file.fileName, file.filePath + (strlen(file.filePath) - k) + 1);
 
 	return true;
-}
+}*/
 
-/*bool Server::WriteFile(Socket socket, int recvfd, int fd) {
+/*bool Server::WriteFile(int recvfd, int fd) {
 	int times = 1;
 	while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
 		++times;

@@ -27,7 +27,7 @@ void Epoll::EventAdd(int epollfd, int events, MyEvent *ev) {
 	if (epoll_ctl(epollfd, oprate, ev->fd, &epv) < 0) {
 		printf("Event Add failed[fd=%d], evnets[%d]\n", ev->fd, events);
 	} else {  
-		printf("Event Add OK[fd=%d], op=%d, evnets[%0X], pos: %d\n", ev->fd, oprate, events, ev);
+		printf("Event Add OK[fd=%d], op=%d, evnets[%0X]\n", ev->fd, oprate, events);
 	}
 }
 
@@ -90,23 +90,43 @@ void Epoll::AcceptConn(Epoll *epoll, int fd, int events, void *arg) {
 } 
 
 void Epoll::RecvData(Epoll *epoll, int fd, int events, void *arg) {  
-    struct MyEvent *ev = static_cast<struct MyEvent*>(arg);  
-    int len = Socket::SockRecv(fd, ev->buff+ev->len, sizeof(ev->buff)-1-ev->len);   
-    epoll->EventDel(epoll->epollFd, ev);
-    if(len > 0) {
-        ev->len += len;
-        ev->buff[len] = '\0';  
-        printf("C[%d]:%s\n", fd, ev->buff);  
-        // change to send event  
-        epoll->EventSet(ev, fd, SendData, ev);  
-        epoll->EventAdd(epoll->epollFd, EPOLLOUT, ev);  
-    } else if(len == 0) {  
-        Socket::SockClose(ev->fd); 
-        printf("[fd=%d] pos[%d], closed gracefully.\n", fd, epoll->epollFd);  
-    } else {  
+    struct MyEvent *ev = static_cast<struct MyEvent*>(arg);
+	int recvLen = Socket::SockRecv(fd, ev->buff, BUFFER_SIZE);
+	cout << recvLen << endl;
+	epoll->EventDel(epoll->epollFd, ev);
+	
+	if(recvLen > 0) {
+		if(ev->buff[0] == '/' && ev->fileName == nullptr) {
+			ev->fileName = (char*)malloc(512);
+			epoll->GetFileName(ev->fileName, ev->buff);
+			LOG("filename: %s", ev->fileName);
+		}
+
+		if(ev->fileName != nullptr) {
+			int ffd = open(ev->fileName, O_CREAT | O_RDWR, 0664);
+			if(ffd < 0) {
+				LOG("open file failed.");
+				return ;
+			} else {
+				write(fd, ev->buff, recvLen);
+				memset(ev->buff, 0, sizeof(ev->buff));
+				if(recvLen < BUFFER_SIZE) {
+					LOG("write finished.");
+				} else {
+					epoll->WriteFile(fd, ffd, ev->buff);
+				}
+			}
+		}
+	} else if(recvLen == 0) {
+		Socket::SockClose(ev->fd);
+		printf("[fd=%d] pos[%d], closed gracefully.\n", fd, epoll->epollFd);
+	} else {  
         Socket::SockClose(ev->fd);  
         printf("recv[fd=%d] error[%d]:%s\n", fd, errno, strerror(errno));  
-    }  
+    }
+		
+	epoll->EventSet(ev, fd, RecvData, ev);	
+	epoll->EventAdd(epoll->epollFd, EPOLLIN, ev);	
 } 
 
 void Epoll::SendData(Epoll *epoll, int fd, int events, void *arg) {  
@@ -140,4 +160,41 @@ void Epoll::EpollInit() {
     // add listen socket  
     EventAdd(this->epollFd, EPOLLIN, this->myEvents);
 }
+
+void Epoll::GetFileName(char* fileName, char* filePath) {
+	int i = 0, k = 0;
+	for(i = strlen(filePath); i > 0; --i) {
+		if(filePath[i] != '/') {
+			++k;
+		} else {
+			break;
+		}
+	}
+
+	strcpy(fileName, filePath + (strlen(filePath) - k) + 1);
+}
+
+void Epoll::WriteFile(int recvfd, int fd, char* buff) {
+	int times = 1;
+	int recvLen = 0;
+	while(recvLen = Socket::SockRecv(recvfd, buff, BUFFER_SIZE)) {
+		++times;
+		if(recvLen < 0) {
+			LOG("recv2 error.");
+			break;
+		}
+		write(fd, buff, recvLen);
+		if(recvLen < BUFFER_SIZE) {
+			LOG("write finished.");
+			break;
+		} else {
+			LOG("write success.");
+		}
+		memset(buff, 0, sizeof(buff));
+	}
+	LOG("recv finished.");
+}
+
+
+
 

@@ -1992,3 +1992,2139 @@
 
 [2021.02.07] [15:58:43] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 15 success.
 
+[2021.02.08] [15:20:14] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [15:20:14] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [15:20:14] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [15:20:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [15:20:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [15:20:40] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [15:20:40] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [15:20:40] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [15:20:40] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [15:20:40] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [15:20:55] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [15:20:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [15:20:55] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [15:20:55] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [15:20:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [15:20:55] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [15:20:55] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:12:26] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:12:26] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:12:26] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:12:30] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:12:30] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:12:30] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:12:30] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:12:30] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:12:30] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:12:30] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:12:36] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:12:36] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:12:36] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:12:36] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:12:36] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:12:36] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:12:36] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:13:10] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:13:10] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:13:10] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:13:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:13:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:13:13] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:13:13] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:13:13] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:13:13] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:13:13] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:13:23] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:13:23] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:13:23] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:13:23] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:13:23] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:13:23] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:13:23] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:18:27] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:18:27] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:18:27] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:18:31] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:18:31] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:18:31] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:18:31] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:18:31] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:18:31] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:18:31] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:18:37] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:18:37] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:18:37] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:18:37] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:18:37] [./src/Epoll.cpp:RecvData:101][LOG_NORMAL]filename: (null)
+
+[2021.02.08] [16:18:37] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:18:37] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:18:37] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:18:37] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:19:19] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:19:19] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:19:19] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:19:19] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:19:19] [./src/Epoll.cpp:RecvData:101][LOG_NORMAL]filename: (null)
+
+[2021.02.08] [16:19:19] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:19:19] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:19:19] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:19:19] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:22:33] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:22:33] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.08] [16:22:33] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:22:40] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:22:40] [./src/Socket.cpp:SockBind:27][LOG_NORMAL]bind error.
+
+[2021.02.08] [16:22:40] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:23:13] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:23:13] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:23:13] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:23:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:23:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:23:17] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:23:17] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:23:17] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:23:17] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:23:17] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:23:25] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:23:25] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:23:25] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:23:25] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:23:25] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:23:25] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:23:25] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:23:25] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:23:25] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:23:25] [./src/Epoll.cpp:WriteFile:189][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:26:02] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:26:02] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:26:02] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:26:07] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:26:07] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:26:07] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:26:07] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:26:07] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:26:07] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:26:07] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:26:15] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:26:15] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:26:15] [./src/Epoll.cpp:RecvData:102][LOG_NORMAL]filename: startup.sh
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:26:15] [./src/Epoll.cpp:WriteFile:177][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:26:15] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:26:15] [./src/Epoll.cpp:WriteFile:189][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:26:15] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:26:15] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:26:15] [./src/Epoll.cpp:WriteFile:177][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:26:15] [./src/Epoll.cpp:WriteFile:189][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:38:38] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:38:38] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:38:38] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:38:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:38:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:38:42] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:38:42] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:38:42] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:38:42] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:38:42] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:38:48] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:38:48] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:38:48] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:38:48] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:38:48] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:38:48] [./src/Epoll.cpp:RecvData:102][LOG_NORMAL]filename: startup.sh
+
+[2021.02.08] [16:38:48] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:38:48] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:38:48] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:38:48] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:38:48] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:39:18] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:39:18] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:39:18] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:39:18] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:39:18] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:39:18] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 16.
+
+[2021.02.08] [16:39:18] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:40:00] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:40:00] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:40:00] [./src/Epoll.cpp:RecvData:102][LOG_NORMAL]filename: startup.sh
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:40:00] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:40:00] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:40:00] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:40:00] [./src/Server.cpp:main:147][LOG_NORMAL]fd: 12 time out.
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 12 success.
+
+[2021.02.08] [16:40:00] [./src/Server.cpp:main:147][LOG_NORMAL]fd: 13 time out.
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockClose:109][LOG_NORMAL]close socket: 13 success.
+
+[2021.02.08] [16:40:00] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:40:00] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:40:02] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:40:02] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:40:02] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:40:51] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.02.08] [16:40:51] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:40:51] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:40:51] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:40:51] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.02.08] [16:40:51] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:40:51] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:40:51] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:40:51] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:40:51] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:42:42] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:42:42] [./src/Socket.cpp:SockBind:30][LOG_NORMAL]bind success.
+
+[2021.02.08] [16:42:42] [./src/Socket.cpp:SockListen:41][LOG_NORMAL]listen success.
+
+[2021.02.08] [16:42:48] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:42:48] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:42:48] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:42:48] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:42:48] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:42:48] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 13.
+
+[2021.02.08] [16:42:48] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:42:58] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:42:58] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.02.08] [16:42:58] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.02.08] [16:42:58] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.02.08] [16:42:58] [./src/Socket.cpp:SockAccpet:77][LOG_NORMAL]accept success.
+
+[2021.02.08] [16:42:58] [./src/Epoll.cpp:AcceptConn:64][LOG_NORMAL]new fd: 14.
+
+[2021.02.08] [16:42:58] [./src/Epoll.cpp:AcceptConn:81][LOG_NORMAL]fcntl nonblocking success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/log/log.txt
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:RecvData:102][LOG_NORMAL]filename: log.txt
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:RecvData:113][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:60][LOG_NORMAL]data len is: 1024
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:61][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 506
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:86][LOG_NORMAL]recv error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:182][LOG_NORMAL]recv2 error.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:190][LOG_NORMAL]write success.
+
+[2021.02.08] [16:43:17] [./src/Socket.cpp:SockRecv:89][LOG_NORMAL]recv success.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:187][LOG_NORMAL]write finished.
+
+[2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
+
