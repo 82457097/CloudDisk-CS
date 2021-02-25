@@ -116,16 +116,16 @@ bool Server::SaveToMysql(Statement* state, string fileName, string fileId) {
 int main() {
 	Server server;
 	Epoll epoll;
-	Connection *conn;
-    Statement *state;
-    ResultSet *result;
+//	Connection *conn;
+//    Statement *state;
+//    ResultSet *result;
 	
-	ConnPool *connpool = ConnPool::GetInstance();
-	conn = connpool->GetConnection();
-	state = conn->createStatement();
-	string sql = "use ";
-	sql += DB_NAME;
-	state->execute(sql);
+//	ConnPool *connpool = ConnPool::GetInstance();
+//	conn = connpool->GetConnection();
+//	state = conn->createStatement();
+//	string sql = "use ";
+//	sql += DB_NAME;
+//	state->execute(sql);
 	epoll.EpollInit();
 
 	int checkPos = 0;  
@@ -171,7 +171,7 @@ int main() {
 		}  
 	}
 
-	connpool->DestoryConnPool();
+//	connpool->DestoryConnPool();
 	
 	return 0;
 }

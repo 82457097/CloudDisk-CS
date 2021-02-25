@@ -89,44 +89,49 @@ void Epoll::AcceptConn(Epoll *epoll, int fd, int events, void *arg) {
 		ntohs(sin.sin_port), epoll->myEvents[index].last_active, index);  
 } 
 
-void Epoll::RecvData(Epoll *epoll, int fd, int events, void *arg) {  
+//数据接收回调函数
+//当监听到有数据到达的时候，该回调函数会被调用
+void Epoll::RecvData(Epoll *epoll, int fd, int events, void *arg) {
     struct MyEvent *ev = static_cast<struct MyEvent*>(arg);
-	int recvLen = Socket::SockRecv(fd, ev->buff, BUFFER_SIZE);
-	cout << recvLen << endl;
-	epoll->EventDel(epoll->epollFd, ev);
-	
-	if(recvLen > 0) {
-		if(ev->buff[0] == '/' && ev->fileName == nullptr) {
-			ev->fileName = (char*)malloc(512);
-			epoll->GetFileName(ev->fileName, ev->buff);
-			LOG("filename: %s", ev->fileName);
-		}
+    memset(ev->buff, 0, sizeof(ev->buff));
+    int recvLen = Socket::SockRecv(fd, ev->buff, BUFFER_SIZE);
+    cout << recvLen << endl;
+    epoll->EventDel(epoll->epollFd, ev);
 
-		if(ev->fileName != nullptr) {
-			int ffd = open(ev->fileName, O_CREAT | O_RDWR, 0664);
-			if(ffd < 0) {
-				LOG("open file failed.");
-				return ;
-			} else {
-				write(fd, ev->buff, recvLen);
-				memset(ev->buff, 0, sizeof(ev->buff));
-				if(recvLen < BUFFER_SIZE) {
-					LOG("write finished.");
-				} else {
-					epoll->WriteFile(fd, ffd, ev->buff);
-				}
-			}
-		}
-	} else if(recvLen == 0) {
-		Socket::SockClose(ev->fd);
-		printf("[fd=%d] pos[%d], closed gracefully.\n", fd, epoll->epollFd);
-	} else {  
-        Socket::SockClose(ev->fd);  
-        printf("recv[fd=%d] error[%d]:%s\n", fd, errno, strerror(errno));  
+    if(recvLen > 0) {
+	//如果event结构体已经拿到了文件名，说明改数据包为文件数据包
+        if(ev->fileName != nullptr) {
+	    int ffd = open(ev->fileName, O_CREAT | O_RDWR | O_APPEND, 0664);
+	    if(ffd < 0) {
+	        LOG("open file failed.");
+	        return ;
+	    } else {
+	        write(ffd, ev->buff, recvLen);
+	        if(recvLen < BUFFER_SIZE) {
+                    ev->fileName = nullptr;
+	            LOG("write finished.");
+	        } else {
+	            LOG("write success.");
+	        }
+	    }
+         }
+
+        //先判断是否为文件名数据包
+        if(ev->buff[0] == '/' && ev->fileName == nullptr) {
+            ev->fileName = (char*)malloc(512);
+            epoll->GetFileName(ev->fileName, ev->buff);
+            LOG("filename: %s", ev->fileName);
+        }
+    } else if(recvLen == 0) {
+	Socket::SockClose(ev->fd);
+	printf("[fd=%d] pos[%d], closed gracefully.\n", fd, epoll->epollFd);
+    } else {
+        Socket::SockClose(ev->fd);
+	printf("recv[fd=%d] error[%d]:%s\n", fd, errno, strerror(errno));
     }
-		
-	epoll->EventSet(ev, fd, RecvData, ev);	
-	epoll->EventAdd(epoll->epollFd, EPOLLIN, ev);	
+
+    epoll->EventSet(ev, fd, RecvData, ev);	
+    epoll->EventAdd(epoll->epollFd, EPOLLIN, ev);
 } 
 
 void Epoll::SendData(Epoll *epoll, int fd, int events, void *arg) {  
