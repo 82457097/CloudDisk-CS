@@ -1,7 +1,7 @@
 #include <stdexcept>  
 #include <exception>  
 #include <stdio.h>  
-#include "ConnPool.h"  
+#include "MysqlConnPool.h"  
    
 using namespace std;  
 using namespace sql;  

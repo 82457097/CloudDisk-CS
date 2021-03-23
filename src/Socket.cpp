@@ -1,14 +1,16 @@
 #include"Socket.h"
 
 Socket::Socket() {
+
+}
+
+void Socket::SockInitServer() {
 	if((m_sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
 		LOG("socket build failed.");
 	} else {
 		LOG("socket build success.");
 	}
-}
 
-void Socket::SockInitServer() {
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);
@@ -16,6 +18,12 @@ void Socket::SockInitServer() {
 }
 
 void Socket::SockInitClient() {
+	if((m_sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+		LOG("socket build failed.");
+	} else {
+		LOG("socket build success.");
+	}
+
 	memset(&m_sockaddr, 0, sizeof(m_sockaddr));
 	m_sockaddr.sin_family = AF_INET;
 	m_sockaddr.sin_port = htons(PORT);

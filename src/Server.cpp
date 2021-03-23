@@ -1,19 +1,23 @@
 #include"Server.h"
 
-bool Server::ServerInit() {
-	file.fileData = (char*)malloc(BUFFER_SIZE);
+/* 初始化客户连接，清空读缓冲区 */
+void Server::init(int epollfd, int sockfd, const sockaddr_in& client_addr) {
+    file.fileData = (char*)malloc(BUFFER_SIZE);
 	memset(file.fileData, '\0', sizeof(file.fileData));
-
-	return true;
+    
+	m_epollfd = epollfd;
+    printf("m_sockfd:%d\n", sockfd);
+	m_sockfd = sockfd;
+	m_address = client_addr;
 }
 	
-/*bool Server::ServerAccept() {
-	int recvfd = socket.SockAccpet();
-	socket.SockRecv(recvfd, file.filePath, 100);
+void Server::process() {
+    printf("Accept sock:%d\n", m_sockfd);
+	//int recvfd = socket.SockAccpet(m_sockfd, m_address);
+	socket.SockRecv(m_sockfd, file.filePath, 100);
 	LOG("filepath is: %s", file.filePath);
-	if(recvfd < 0) {
+	if(m_sockfd < 0) {
 		LOG("recv error.");
-		return false;
 	} else {
 		GetFileName();
 	}
@@ -22,12 +26,9 @@ bool Server::ServerInit() {
 	int fd = open(file.fileName, O_CREAT | O_RDWR, 0664);
 	if(fd < 0) {
 		LOG("open file failed.");
-		return false;
 	} else {
-		WriteFile(recvfd, fd);
+		WriteFile(m_sockfd, fd);
 	}
-
-	return true;
 }
 
 bool Server::GetFileName() {
@@ -42,9 +43,9 @@ bool Server::GetFileName() {
 	strcpy(file.fileName, file.filePath + (strlen(file.filePath) - k) + 1);
 
 	return true;
-}*/
+}
 
-/*bool Server::WriteFile(int recvfd, int fd) {
+bool Server::WriteFile(int recvfd, int fd) {
 	int times = 1;
 	while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
 		++times;
@@ -65,7 +66,7 @@ bool Server::GetFileName() {
 	close(fd);
 
 	return true;
-}*/
+}
 
 bool Server::UploadFile() {
 	if (!fastDFS.FdfsClientInit()) {
@@ -113,7 +114,50 @@ bool Server::SaveToMysql(Statement* state, string fileName, string fileId) {
 	return false;
 }
 
-int main() {
+int main(int argc, char* argv[]) {
+	if(argc <= 2) {
+		printf("usage: %s ip_address port_number\n", basename(argv[0]));
+		return 1;
+	}
+	const char* ip = argv[1];
+	int port = atoi(argv[2]);
+	int listenfd = socket(PF_INET, SOCK_STREAM, 0);
+	assert(listenfd >= 0);
+	int ret = 0;
+	struct sockaddr_in address;
+	bzero(&address, sizeof(address));
+	address.sin_family = AF_INET;
+	inet_pton(AF_INET, ip, &address.sin_addr);
+	address.sin_port = htons(port);
+	ret = bind(listenfd, (struct sockaddr*)&address, sizeof(address));
+	assert(ret != -1);
+	ret = listen(listenfd, 5);
+	assert(ret != -1);
+
+    /*Connection *conn;
+    Statement *state;
+    ResultSet *result;
+    
+    ConnPool *connpool = ConnPool::GetInstance();
+    conn = connpool->GetConnection();
+    state = conn->createStatement();
+    string sql = "use ";
+    sql += DB_NAME;
+    state->execute(sql);*/
+
+	ProcessPool<Server>* pool = ProcessPool<Server>::create(listenfd);
+	if(pool) {
+		pool->run();
+		delete pool;
+	}
+	close(listenfd); /*正如前文提到的，main函数创建了文件描述符listenfd，那么就由它亲自关闭之*/
+    //connpool->DestoryConnPool();
+    
+	return 0;
+}
+
+
+/*int main() {
 	Server server;
 	Epoll epoll;
 	Connection *conn;
@@ -174,4 +218,4 @@ int main() {
 	connpool->DestoryConnPool();
 	
 	return 0;
-}
+}*/
