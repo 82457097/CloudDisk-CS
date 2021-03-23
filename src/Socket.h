@@ -46,7 +46,6 @@ public:
 	static bool SockClose(int fd);
 
 	int m_sockfd;
-    int recvLen;
 	struct sockaddr_in m_sockaddr;
 };
 

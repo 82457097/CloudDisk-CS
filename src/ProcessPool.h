@@ -84,7 +84,7 @@ private:
             assert(m_sub_process[i].m_pid >= 0);
             if(m_sub_process[i].m_pid > 0) {
                 printf("创建子进程成功：%d\n", m_sub_process[i].m_pid);
-		close(m_sub_process[i].m_pipefd[1]);
+				close(m_sub_process[i].m_pipefd[1]);
                 continue;
             } else {
                 close(m_sub_process[i].m_pipefd[0]);
@@ -218,7 +218,7 @@ private:
     }
     
     void run_child() {
-        printf("子进程工作！%d\n", m_idx);
+        printf("子进程: %d 开始工作！\n", m_idx);
         setup_sig_pipe();
         int pipefd = m_sub_process[m_idx].m_pipefd[1];
         addfd(m_epollfd, pipefd);
@@ -297,7 +297,7 @@ private:
 
 private:
     static const int MAX_PROCESS_NUMBER = 16;
-    static const int USER_PER_PROCESS = 10;
+    static const int USER_PER_PROCESS = 100;
     static const int MAX_EVENT_NUMBER = 1024;
     int m_process_number;
     int m_idx;

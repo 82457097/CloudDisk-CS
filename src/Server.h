@@ -13,13 +13,13 @@ public:
 	
 	~Server() {}
 
-	void init(int epollfd, int sockfd, const sockaddr_in& client_addr);
+	void init(int epollfd, int sockfd, const sockaddr_in& clientAddr);
 
     void process();
 	
 	bool GetFileName();
 	
-	bool WriteFile(int recvfd, int fd);
+	bool WriteFile(int fd);
 	
 	bool UploadFile();
 	
@@ -30,7 +30,6 @@ private:
     int m_sockfd;
     sockaddr_in m_address;
     char m_buf[BUFFER_SIZE];
-    Socket socket;
 };
 
 int Server::m_epollfd = -1;

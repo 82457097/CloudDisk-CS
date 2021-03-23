@@ -88,16 +88,8 @@ int Socket::SockAccpet(int sockFd, struct sockaddr_in &sockAddr) {
 	return recvfd;
 }
 
-int Socket::SockRecv(int recvfd, char buf[], int len) {
-	int recvLen = recv(recvfd, buf, len, 0);
-	if(recvLen < 0) {
-		LOG("recv error.");
-		return -1;
-	} else {
-		LOG("recv success.");
-	}
-	
-	return recvLen;
+int Socket::SockRecv(int recvfd, char buf[], int len) {	
+	return recv(recvfd, buf, len, 0);
 }
 
 int Socket::SockSend(int sendfd, const char buf[], int len) {

@@ -4128,3 +4128,681 @@
 
 [2021.02.08] [16:43:17] [./src/Epoll.cpp:WriteFile:194][LOG_NORMAL]recv finished.
 
+[2021.03.23] [14:59:32] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [14:59:32] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [14:59:32] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [14:59:32] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:00:21] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:00:21] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockRecv:97][LOG_NORMAL]recv success.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:process:18][LOG_NORMAL]filepath is: /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:process:24][LOG_NORMAL]filename: startup.sh
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockRecv:94][LOG_NORMAL]recv error.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:WriteFile:53][LOG_NORMAL]recv2 error.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]recv finished.
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockRecv:97][LOG_NORMAL]recv success.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:process:18][LOG_NORMAL]filepath is: #!/bin/bash
+
+fdfs_trackerd /etc/fdfs/tracker.conf
+fdfs_storaged /etc/fdfs/storage.conf
+fdfs_monitor 
+
+[2021.03.23] [15:00:21] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:process:24][LOG_NORMAL]filename: storage.conf
+fdfs_monitor 
+
+[2021.03.23] [15:00:21] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:00:21] [./src/Socket.cpp:SockRecv:97][LOG_NORMAL]recv success.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:WriteFile:58][LOG_NORMAL]write finished.
+
+[2021.03.23] [15:00:21] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]recv finished.
+
+[2021.03.23] [15:00:53] [./src/Socket.cpp:SockRecv:97][LOG_NORMAL]recv success.
+
+[2021.03.23] [15:00:53] [./src/Server.cpp:process:18][LOG_NORMAL]filepath is: #!/bin/bash
+
+fdfs_trackerd /etc/fdfs/tracker.conf
+fdfs_storaged /etc/fdfs/storage.conf
+fdfs_monitor 
+
+[2021.03.23] [15:00:53] [./src/Server.cpp:process:24][LOG_NORMAL]filename: storage.conf
+fdfs_monitor 
+
+[2021.03.23] [15:00:53] [./src/Socket.cpp:SockRecv:97][LOG_NORMAL]recv success.
+
+[2021.03.23] [15:00:53] [./src/Server.cpp:WriteFile:65][LOG_NORMAL]recv finished.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:08] [./src/MysqlConnPool.cpp:DestoryConnPool:123][LOG_NORMAL]connection pool destory success.
+
+[2021.03.23] [15:01:35] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:01:35] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:01:35] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:01:35] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:01:45] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:01:45] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:01:45] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:01:45] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:01:45] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:01:45] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:02:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:02:03] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:02:03] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:02:03] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:02:13] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:02:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:02:13] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:02:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:02:13] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:02:13] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:14:50] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:14:50] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:14:50] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:14:50] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:14:53] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:14:53] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:14:53] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:14:53] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:15:04] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:15:04] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:04] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:15:04] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:04] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:15:04] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:15:13] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:15:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:13] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:15:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:13] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:15:13] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:15:19] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:15:19] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:19] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:15:19] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:19] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:15:19] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:15:30] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:15:30] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:30] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:15:30] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:15:30] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:15:30] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:15:34] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:18:28] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:18:28] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:18:28] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:18:28] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:18:31] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:18:31] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:18:31] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:18:31] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:18:38] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:18:38] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:18:38] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:18:38] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:18:38] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:18:38] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:18:55] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:18:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:18:55] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:18:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:18:55] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:18:55] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:19:04] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:04] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:04] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:19:04] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:04] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:19:04] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:19:08] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:08] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:08] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:19:08] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:08] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:19:08] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:19:13] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:13] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:19:13] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:13] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:19:13] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:19:17] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:17] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:19:17] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:17] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:19:17] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:19:25] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:25] [./src/Socket.cpp:SockSend:98][LOG_NORMAL]send failed.
+
+[2021.03.23] [15:19:25] [./src/Client.cpp:SendFilePath:37][LOG_NORMAL]filepath send error!
+
+[2021.03.23] [15:19:25] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.03.23] [15:19:25] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.03.23] [15:19:33] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:19:33] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:33] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:19:33] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:19:33] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:19:33] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:23:05] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:23:05] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:23:05] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:23:05] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:23:07] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:23:07] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:23:07] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:23:07] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:23:20] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:23:20] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:20] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:23:20] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:20] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 981
+
+[2021.03.23] [15:23:20] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:23:36] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:23:36] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:36] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:23:36] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:36] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:23:36] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:23:42] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:23:42] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:42] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:23:42] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:42] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:23:42] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:23:48] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:23:48] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:48] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:23:48] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:23:48] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:23:48] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:33:46] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:33:46] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:33:46] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:33:46] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:33:49] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:33:49] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:33:49] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:33:49] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:34:05] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/startup.sh
+
+[2021.03.23] [15:34:05] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:05] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:05] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:05] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 122
+
+[2021.03.23] [15:34:05] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:16] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:16] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:16] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:16] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:16] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:16] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:30] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:30] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:30] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:30] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:30] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:30] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:33] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:33] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:33] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:33] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:33] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:33] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:37] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:37] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:37] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:37] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:37] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:37] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:40] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:40] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:40] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:40] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:40] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:40] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:43] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:43] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:43] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:43] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:43] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:43] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:46] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:46] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:46] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:46] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:46] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:46] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:50] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:50] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:50] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:50] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:50] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:50] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:53] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:53] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:53] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:53] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:53] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:53] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:34:59] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:34:59] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:59] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:34:59] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:34:59] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:34:59] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:01] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:35:01] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:01] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:35:01] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:01] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:35:01] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:04] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.03.23] [15:35:04] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.03.23] [15:35:10] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:35:10] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:10] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:35:10] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:10] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:35:10] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:14] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:35:14] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:14] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:35:14] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:14] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:35:14] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:18] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:35:18] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:18] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:35:18] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:18] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:35:18] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:21] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:35:21] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:21] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:35:21] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:35:21] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:35:21] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:35:33] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:35:33] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:35:33] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:35:33] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:52:39] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:52:39] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:52:39] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:52:39] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:53:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:53:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:53:17] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:53:17] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:56:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:56:44] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:56:44] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:56:44] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:56:46] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:56:46] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:56:46] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:56:46] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:58:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:58:17] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:58:17] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:58:17] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:58:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:58:19] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:58:19] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:58:19] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:58:55] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:58:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:58:55] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:58:55] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:58:55] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:58:55] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [15:59:08] [./src/Client.cpp:ClientSend:14][LOG_NORMAL]sendPath failed.
+
+[2021.03.23] [15:59:08] [./src/Socket.cpp:SockClose:117][LOG_NORMAL]close success.
+
+[2021.03.23] [15:59:32] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:59:32] [./src/Socket.cpp:Socket:7][LOG_NORMAL]socket build success.
+
+[2021.03.23] [15:59:32] [./src/Socket.cpp:SockConnect:52][LOG_NORMAL]connect success.
+
+[2021.03.23] [15:59:32] [./src/Client.cpp:main:88][LOG_NORMAL]client init success.
+
+[2021.03.23] [15:59:43] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [15:59:43] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:59:43] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [15:59:43] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [15:59:43] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [15:59:43] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+
+[2021.03.23] [16:00:10] [./src/Client.cpp:SendFilePath:32][LOG_NORMAL]filepath : /home/junbaba/git/CloudDisk-CS/Makefile
+
+[2021.03.23] [16:00:10] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [16:00:10] [./src/Client.cpp:SendFilePath:40][LOG_NORMAL]filepath send success!
+
+[2021.03.23] [16:00:10] [./src/Socket.cpp:SockSend:101][LOG_NORMAL]send success.
+
+[2021.03.23] [16:00:10] [./src/Client.cpp:SendFileData:70][LOG_NORMAL]data len is: 984
+
+[2021.03.23] [16:00:10] [./src/Client.cpp:SendFileData:71][LOG_NORMAL]send successful!
+

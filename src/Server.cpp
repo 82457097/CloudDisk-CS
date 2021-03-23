@@ -1,24 +1,29 @@
 #include"Server.h"
 
 /* 初始化客户连接，清空读缓冲区 */
-void Server::init(int epollfd, int sockfd, const sockaddr_in& client_addr) {
+void Server::init(int epollfd, int sockfd, const sockaddr_in& clientAddr) {
     file.fileData = (char*)malloc(BUFFER_SIZE);
 	memset(file.fileData, '\0', sizeof(file.fileData));
     
 	m_epollfd = epollfd;
     printf("m_sockfd:%d\n", sockfd);
 	m_sockfd = sockfd;
-	m_address = client_addr;
+	m_address = clientAddr;
 }
 	
 void Server::process() {
     printf("Accept sock:%d\n", m_sockfd);
-	//int recvfd = socket.SockAccpet(m_sockfd, m_address);
-	socket.SockRecv(m_sockfd, file.filePath, 100);
-	LOG("filepath is: %s", file.filePath);
-	if(m_sockfd < 0) {
-		LOG("recv error.");
+	int recvLen = Socket::SockRecv(m_sockfd, file.filePath, 100);
+	if(recvLen < 0) {
+		LOG("Recv error");
+		removefd(m_epollfd, m_sockfd);
+		return ;
+	} else if(recvLen == 0) {
+		LOG("客户端退出！");
+		removefd(m_epollfd, m_sockfd);
+		return ;
 	} else {
+		LOG("filepath is: %s", file.filePath);
 		GetFileName();
 	}
 	LOG("filename: %s", file.fileName);
@@ -27,7 +32,7 @@ void Server::process() {
 	if(fd < 0) {
 		LOG("open file failed.");
 	} else {
-		WriteFile(m_sockfd, fd);
+		WriteFile(fd);
 	}
 }
 
@@ -45,16 +50,23 @@ bool Server::GetFileName() {
 	return true;
 }
 
-bool Server::WriteFile(int recvfd, int fd) {
+bool Server::WriteFile(int fd) {
 	int times = 1;
-	while(socket.recvLen = socket.SockRecv(recvfd, file.fileData, BUFFER_SIZE)) {
+	while(true) {
+		int recvLen = Socket::SockRecv(m_sockfd, file.fileData, BUFFER_SIZE);
 		++times;
-		if(socket.recvLen < 0) {
-			LOG("recv2 error.");
+		if(recvLen < 0) {
+			LOG("Recv error");
+			removefd(m_epollfd, m_sockfd);
+			break;
+		} else if(recvLen == 0) {
+			LOG("客户端退出！");
+			removefd(m_epollfd, m_sockfd);
 			break;
 		}
-		write(fd, file.fileData, socket.recvLen);
-		if(socket.recvLen < BUFFER_SIZE) {
+		
+		write(fd, file.fileData, recvLen);
+		if(recvLen < BUFFER_SIZE) {
 			LOG("write finished.");
 			break;
 		} else {
@@ -62,7 +74,6 @@ bool Server::WriteFile(int recvfd, int fd) {
 		}
 		memset(file.fileData, 0, sizeof(file.fileData));
 	}
-	LOG("recv finished.");
 	close(fd);
 
 	return true;
@@ -134,7 +145,7 @@ int main(int argc, char* argv[]) {
 	ret = listen(listenfd, 5);
 	assert(ret != -1);
 
-    /*Connection *conn;
+    Connection *conn;
     Statement *state;
     ResultSet *result;
     
@@ -143,7 +154,7 @@ int main(int argc, char* argv[]) {
     state = conn->createStatement();
     string sql = "use ";
     sql += DB_NAME;
-    state->execute(sql);*/
+    state->execute(sql);
 
 	ProcessPool<Server>* pool = ProcessPool<Server>::create(listenfd);
 	if(pool) {
@@ -151,7 +162,7 @@ int main(int argc, char* argv[]) {
 		delete pool;
 	}
 	close(listenfd); /*正如前文提到的，main函数创建了文件描述符listenfd，那么就由它亲自关闭之*/
-    //connpool->DestoryConnPool();
+    connpool->DestoryConnPool();
     
 	return 0;
 }
