@@ -1,7 +1,7 @@
 #include <stdexcept>  
 #include <exception>  
 #include <stdio.h>  
-#include "ConnPool.h"  
+#include "MysqlConnPool.h"  
    
 using namespace std;  
 using namespace sql;  
@@ -36,8 +36,9 @@ bool ConnPool::InitConnection(int iInitialSize) {
     for (int i = 0; i < iInitialSize; i++) {  
         conn = this->CreateConnection();  
         if (conn) {  
-            connList.push_back(conn);  
-            ++(this->curSize);  
+            connList.push_back(conn);
+            ++(this->curSize);
+			cout << "create connection success!" << endl;
         } else {  
             cout << "create connection failed!" << endl;
 			return false;
@@ -66,7 +67,7 @@ Connection* ConnPool::GetConnection() {
     Connection* con;  
     pthread_mutex_lock(&lock);  
    
-    if (connList.size() > 0) {   //连接池容器中还有连接  
+    if(connList.size() > 0) {   //连接池容器中还有连接  
         con = connList.front(); //得到第一个连接  
         connList.pop_front();   //移除第一个连接  
         if (con->isClosed()) {   //如果连接已经被关闭，删除后重新建立一个  
@@ -83,7 +84,7 @@ Connection* ConnPool::GetConnection() {
     } else {  
         if (curSize < maxSize) {   
             con = this->CreateConnection();  
-            if (con) {  
+            if(con) {  
                 ++curSize;  
                 pthread_mutex_unlock(&lock);  
                 return con;  
@@ -99,7 +100,7 @@ Connection* ConnPool::GetConnection() {
 }  
    
 void ConnPool::ReleaseConnection(sql::Connection * conn) {  
-    if (conn) {  
+    if(conn) {  
         pthread_mutex_lock(&lock);  
         connList.push_back(conn);  
         pthread_mutex_unlock(&lock);  
@@ -124,7 +125,7 @@ void ConnPool::DestoryConnPool() {
 }  
     
 void ConnPool::DestoryConnection(Connection* conn) {  
-    if (conn) {  
+    if(conn) {  
         try {  
             conn->close();  
         } catch (sql::SQLException&e) {  
